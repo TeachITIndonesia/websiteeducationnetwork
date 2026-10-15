@@ -1,0 +1,637 @@
+{
+  "tjkt": [
+    {
+      "id": "pengertian-tjkt",
+      "title": "Pengertian & Scope TJKT",
+      "category": "Dasar TJKT",
+      "icon": "fa-solid fa-network-wired",
+      "explanation": "Teknik Jaringan Komputer dan Telekomunikasi (TJKT) adalah disiplin ilmu kejuruan dan teknik yang berfokus pada perancangan, pembangunan, pengelolaan, dan pengamanan infrastruktur jaringan komputer serta sistem transmisi telekomunikasi.\n\nBidang TJKT mencakup empat pilar utama:\n1. **Infrastruktur Fisik & Hardware**: Pengabelan terstruktur, perangkat keras router/switch, dan server.\n2. **Protokol & Pengalamatan**: Konfigurasi IPv4/IPv6, subnetting, dan aturan lalu lintas data.\n3. **Layanan Server & Sistem Operasi**: Pengelolaan Linux Server, Windows Server, DNS, DHCP, dan Web Server.\n4. **Keamanan Siber (Cyber Security)**: Implementasi Firewall, Enkripsi, VPN, dan pencegahan peretasan.\n\nProspek Karir TJKT: Network Engineer, System Administrator, Cloud Specialist, Cyber Security Analyst, dan Telecom Technician.",
+      "illustration": "<div class='tech-diagram-box'><div class='d-flex align-items-center gap-3 flex-wrap justify-content-center'><i class='fa-solid fa-server fa-3x text-cyan'></i><i class='fa-solid fa-arrow-right-long text-blue'></i><i class='fa-solid fa-shield-halved fa-3x text-purple'></i><i class='fa-solid fa-arrow-right-long text-blue'></i><i class='fa-solid fa-laptop fa-3x text-cyan'></i></div></div>",
+      "youtube": "https://www.youtube.com/embed/3QhU9jd03a0",
+      "summary": "TJKT membekali keahlian membangun dan mengamankan seluruh jaringan komunikasi digital lokal hingga internet global.",
+      "nextId": "sejarah-jaringan"
+    },
+    {
+      "id": "sejarah-jaringan",
+      "title": "Sejarah Jaringan Komputer",
+      "category": "Dasar TJKT",
+      "icon": "fa-solid fa-timeline",
+      "explanation": "Sejarah jaringan komputer mengalami evolusi dari eksperimen militer hingga menjadi fondasi kehidupan modern:\n\n- **1969 (ARPANET)**: Departemen Pertahanan AS (DARPA) merilis ARPANET yang menghubungkan 4 simpul komputer pertama di Universitas AS menggunakan teknik Packet Switching.\n- **1973 (Ethernet & Fiber)**: Robert Metcalfe merancang kabel Ethernet untuk komunikasi lokal (LAN).\n- **1983 (Standarisasi TCP/IP)**: ARPANET resmi mengadopsi protokol TCP/IP sebagai standar tunggal komunikasi data.\n- **1991 (World Wide Web)**: Tim Berners-Lee di CERN merilis WWW yang mengubah internet menjadi media informasi grafis publik.\n- **Era 2000-an - Sekarang**: Ledakan WiFi, Jaringan Seluler 4G/5G, Cloud Computing, dan Internet of Things (IoT).",
+      "illustration": "<div class='tech-diagram-box'><span class='badge-tech'>1969: ARPANET</span> &rarr; <span class='badge-tech'>1983: TCP/IP</span> &rarr; <span class='badge-tech'>1991: WWW</span> &rarr; <span class='badge-tech'>2026: 5G & Cloud</span></div>",
+      "youtube": "https://www.youtube.com/embed/h8K49dD52WA",
+      "summary": "Jaringan berkembang dari 4 komputer militer sederhana menjadi jaringan global yang menghubungkan lebih dari 15 miliar perangkat hari ini.",
+      "nextId": "jenis-jaringan"
+    },
+    {
+      "id": "jenis-jaringan",
+      "title": "Jenis-Jenis Jaringan Komputer",
+      "category": "Jaringan Komputer",
+      "icon": "fa-solid fa-globe",
+      "explanation": "Jaringan komputer diklasifikasikan berdasarkan luas cakupan geografisnya:\n\n1. **PAN (Personal Area Network)**:\n   - Jangkauan: 1 - 10 Meter.\n   - Contoh: Bluetooth, NFC, Wireless Mouse, Smartwatch ke HP.\n\n2. **LAN (Local Area Network)**:\n   - Jangkauan: 10 Meter - 1 Kilometer (Gedung, Rumah, Sekolah).\n   - Media: Kabel UTP Ethernet / WiFi 802.11.\n\n3. **MAN (Metropolitan Area Network)**:\n   - Jangkauan: 10 - 50 Kilometer (Satu Kota/Kabupaten).\n   - Contoh: Jaringan Antar Kantor Perbankan, Kabel Fiber Optik Pemerintah Daerah.\n\n4. **WAN (Wide Area Network)**:\n   - Jangkauan: Antar Pulau, Negara, hingga Benua (Internet Global).\n   - Media: Kabel Optik Bawah Laut & Satelit Komunikasi.",
+      "illustration": "<div class='tech-diagram-box'><div class='grid-4-col w-100' style='display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;'><div><strong>PAN</strong><br><small>1-10m</small></div><div><strong>LAN</strong><br><small>10m-1km</small></div><div><strong>MAN</strong><br><small>10-50km</small></div><div><strong>WAN</strong><br><small>Global</small></div></div></div>",
+      "youtube": "https://www.youtube.com/embed/zN8YNNHcaZc",
+      "summary": "Pemilihan jenis jaringan disesuaikan dengan skala area, kapasitas transmisi, dan infrastruktur media penghubung.",
+      "nextId": "topologi-jaringan"
+    },
+    {
+      "id": "topologi-jaringan",
+      "title": "Topologi Jaringan Komputer",
+      "category": "Jaringan Komputer",
+      "icon": "fa-solid fa-diagram-project",
+      "explanation": "Topologi jaringan adalah tata letak pemetaan fisik maupun logis dari komputer-komputer terhubung:\n\n1. **Topologi Star (Bintang)**:\n   - Setiap komputer terhubung ke Switch pusat.\n   - **Kelebihan**: Jika 1 kabel putus, komputer lain tidak terganggu. Mudah ditambahkan host baru.\n\n2. **Topologi Bus**:\n   - Menggunakan 1 kabel Coaxial utama bertindak sebagai Backbone.\n   - **Kelemahan**: Jika kabel utama terputus, seluruh jaringan akan lumpuh total.\n\n3. **Topologi Ring (Cincin)**:\n   - Data mengalir satu arah dalam pola lingkaran tertutup menggunakan Token Passing.\n\n4. **Topologi Mesh (Jala)**:\n   - Setiap node terhubung langsung ke setiap node lainnya.\n   - **Kelebihan**: Redundansi sangat tinggi & fault tolerance maksimal.",
+      "illustration": "<div class='tech-diagram-box'><div style='display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;'><span class='badge-tech'><i class='fa-solid fa-asterisk text-cyan me-1'></i>Star</span><span class='badge-tech'><i class='fa-solid fa-grip-lines text-blue me-1'></i>Bus</span><span class='badge-tech'><i class='fa-solid fa-circle-notch text-purple me-1'></i>Ring</span><span class='badge-tech'><i class='fa-solid fa-hashtag text-cyan me-1'></i>Mesh</span></div></div>",
+      "youtube": "https://www.youtube.com/embed/zbqrN367d3U",
+      "summary": "Topologi Star adalah standar de-facto untuk instalasi LAN modern karena keandalan dan kemudahan isolasi kendala.",
+      "nextId": "perangkat-jaringan"
+    },
+    {
+      "id": "perangkat-jaringan",
+      "title": "Perangkat Keras (Hardware) Jaringan",
+      "category": "Hardware Jaringan",
+      "icon": "fa-solid fa-hard-drive",
+      "explanation": "Komponen hardware utama dalam arsitektur jaringan meliputi:\n\n- **Router**: Beroperasi di Layer 3 (Network Layer) untuk menghubungkan segmen IP yang berbeda dan menentukan rute terbaik paket data.\n- **Switch**: Beroperasi di Layer 2 (Data Link) untuk meneruskan frame data berdasarkan MAC Address ke port tujuan spesifik.\n- **Access Point (AP)**: Mengubah sinyal sinyal elektrik/kabel LAN menjadi gelombang radio WiFi (2.4GHz / 5GHz).\n- **Modem (Modulator Demodulator)**: Mengubah sinyal analog dari ISP (Fiber/Kabel TV) menjadi sinyal digital yang dipahami komputer.\n- **NIC (Network Interface Card)**: Adaptor jaringan kabel (RJ-45) atau Wireless pada PC/Server.",
+      "illustration": "<div class='tech-diagram-box'><i class='fa-solid fa-router fa-2x text-cyan me-3'></i>&harr;<i class='fa-solid fa-network-wired fa-2x text-blue mx-3'></i>&harr;<i class='fa-solid fa-wifi fa-2x text-cyan ms-3'></i></div>",
+      "youtube": "https://www.youtube.com/embed/1z0ULvg_pW8",
+      "summary": "Router memisahkan segmen jaringan publik/lokal, sedangkan Switch mengelola lalulintas data internal dalam satu segmen.",
+      "nextId": "kabel-jaringan"
+    },
+    {
+      "id": "kabel-jaringan",
+      "title": "Kabel Jaringan & Media Transmisi",
+      "category": "Hardware Jaringan",
+      "icon": "fa-solid fa-ethernet",
+      "explanation": "Kabel fisik digunakan untuk menghubungkan antar perangkat jaringan:\n\n1. **Kabel UTP (Unshielded Twisted Pair)**:\n   - Terdiri dari 4 pasang kawat tembaga terpilin dengan konektor RJ-45.\n   - **Kategori**: Cat5e (100Mbps/1Gbps), Cat6 (10Gbps jarak pendek), Cat7/Cat8.\n   - **Standar Susunan Kabel T568B**: Putih-Oranye, Oranye, Putih-Hijau, Biru, Putih-Biru, Hijau, Putih-Cokelat, Cokelat.\n\n2. **Kabel Fiber Optik (Serat Optik)**:\n   - Mentransmisikan data dalam bentuk pulsa cahaya melalui inti kaca murni.\n   - Kebal terhadap interferensi gelombang elektromagnetik dan petir.\n   - Kecepatan mencapai puluhan Terabit per detik untuk jarak antarkota.",
+      "illustration": "<div class='tech-diagram-box'><code class='code-badge'>TIA/EIA-568B: Putih-Oranye | Oranye | Putih-Hijau | Biru | Putih-Biru | Hijau | Putih-Cokelat | Cokelat</code></div>",
+      "youtube": "https://www.youtube.com/embed/5a2x1x3H8aQ",
+      "summary": "Fiber Optik digunakan untuk backbone utama, sedangkan kabel UTP Cat6 menjadi standar untuk perkabelan LAN meja kerja.",
+      "nextId": "ip-address"
+    },
+    {
+      "id": "ip-address",
+      "title": "Pengalamatan IP (IPv4 & IPv6)",
+      "category": "Pengalamatan",
+      "icon": "fa-solid fa-hashtag",
+      "explanation": "IP Address (Internet Protocol Address) adalah alamat identitas numerik unik untuk setiap node komputer dalam jaringan.\n\n- **IPv4 (32-Bit)**:\n  - Terdiri dari 4 oktet desimal (0-255), contoh: `192.168.1.1`.\n  - **Kelas IPv4**:\n    - **Kelas A**: 1.0.0.0 s/d 126.255.255.255 (Skala Sangat Besar)\n    - **Kelas B**: 128.0.0.0 s/d 191.255.255.255 (Skala Menengah)\n    - **Kelas C**: 192.0.0.0 s/d 223.255.255.255 (Skala Lokal/Kecil)\n  - **IP Private Kelas C**: `192.168.0.0` - `192.168.255.255` (Dipakai di rumah & kantor).\n\n- **IPv6 (128-Bit)**:\n  - Ditulis dalam 8 kelompok bilangan heksadesimal dipisahkan tanda titik dua, contoh: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`.",
+      "illustration": "<div class='tech-diagram-box'><span class='code-badge'>IPv4 (32-bit): 192.168.1.100 /24</span><br><span class='code-badge mt-2'>IPv6 (128-bit): fe80::1ff:fe23:4567:890a</span></div>",
+      "youtube": "https://www.youtube.com/embed/vcr4_Xh949g",
+      "summary": "IPv6 dikembangkan untuk menggantikan IPv4 yang telah mencapai batas jumlah pengalamatan secara global.",
+      "nextId": "subnetting-dasar"
+    },
+    {
+      "id": "subnetting-dasar",
+      "title": "Subnetting Dasar & CIDR",
+      "category": "Pengalamatan",
+      "icon": "fa-solid fa-calculator",
+      "explanation": "Subnetting adalah teknik membagi satu blok IP Address besar menjadi beberapa sub-jaringan (subnet) yang lebih kecil dan terisolasi.\n\n- **Notasi CIDR (Classless Inter-Domain Routing)**: Menuliskan jumlah bit 1 pada subnet mask menggunakan tanda slash.\n  - Contoh: `/24` berarti subnet mask `255.255.255.0` (memiliki 8 bit untuk host).\n- **Rumus Jumlah Total IP**: `2 ^ (32 - CIDR)`\n  - Untuk `/24`: `2 ^ (32 - 24) = 2^8 = 256 IP`.\n- **Rumus Usable Host**: `Total IP - 2` (Dikurangi 1 Network Address & 1 Broadcast Address).\n  - Untuk `/24`: `256 - 2 = 254 Host usable`.",
+      "illustration": "<div class='tech-diagram-box'>Subnet Mask /24 &rarr; Total IP: 256 | Network ID: .0 | Broadcast ID: .255 | Host Valid: .1 s/d .254</div>",
+      "youtube": "https://www.youtube.com/embed/s_NtW2Y_L6E",
+      "summary": "Subnetting mencegah kebocoran trafik broadcast, menghemat alokasi IP, serta meningkatkan kontrol keamanan segmen.",
+      "nextId": "osi-layer"
+    },
+    {
+      "id": "osi-layer",
+      "title": "Model Refrensi OSI 7 Layer",
+      "category": "Protokol & Arsitektur",
+      "icon": "fa-solid fa-layer-group",
+      "explanation": "OSI (Open Systems Interconnection) adalah model standar internasional 7 lapisan untuk arsitektur komunikasi jaringan:\n\n1. **Application (Layer 7)**: Antarmuka aplikasi langsung dengan pengguna (HTTP, HTTPS, FTP, SSH, SMTP).\n2. **Presentation (Layer 6)**: Formating data, enkripsi/dekripsi, dan kompresi (SSL/TLS, ASCII, JPEG, JSON).\n3. **Session (Layer 5)**: Membuka, memelihara, dan mengakhiri sesi komunikasi antar aplikasi.\n4. **Transport (Layer 4)**: Pengiriman end-to-end, kontrol alur, dan port numbering (TCP, UDP).\n5. **Network (Layer 3)**: Pengalamatan logis (IP Address) dan penentuan rute terbaik (Router, ICMP).\n6. **Data Link (Layer 2)**: Pengalamatan fisik (MAC Address) dan pembentukan Frame (Switch, NIC, Ethernet).\n7. **Physical (Layer 1)**: Transmisi bit mentah sinyal listrik/cahaya (Kabel, Hub, Wireless Transceiver).",
+      "illustration": "<div class='tech-diagram-box'><div style='display: flex; flex-direction: column; gap: 4px; width: 100%; max-width: 320px; margin: 0 auto;'><div class='badge-tech' style='background: rgba(0,242,254,0.2);'>7. Application</div><div class='badge-tech' style='background: rgba(0,242,254,0.18);'>6. Presentation</div><div class='badge-tech' style='background: rgba(0,242,254,0.16);'>5. Session</div><div class='badge-tech' style='background: rgba(0,242,254,0.14);'>4. Transport</div><div class='badge-tech' style='background: rgba(0,242,254,0.12);'>3. Network</div><div class='badge-tech' style='background: rgba(0,242,254,0.1);'>2. Data Link</div><div class='badge-tech' style='background: rgba(0,242,254,0.08);'>1. Physical</div></div></div>",
+      "youtube": "https://www.youtube.com/embed/vv4y_uOneC0",
+      "summary": "Ingat urutan 7 OSI Layer dari atas ke bawah: Application, Presentation, Session, Transport, Network, Data Link, Physical.",
+      "nextId": "tcp-ip"
+    },
+    {
+      "id": "tcp-ip",
+      "title": "Protokol TCP/IP & Nomor Port",
+      "category": "Protokol & Arsitektur",
+      "icon": "fa-solid fa-sliders",
+      "explanation": "TCP/IP adalah protokol nyata yang mengoperasikan jaringan internet secara universal dengan 4 lapisan praktis:\n\n1. **Application Layer**: HTTP (Port 80), HTTPS (Port 443), SSH (Port 22), DNS (Port 53), FTP (Port 21).\n2. **Transport Layer**: TCP & UDP.\n   - **TCP**: Connection-oriented, reliabel, urut, konfirmasi penerimaan (Handshake SYN-ACK).\n   - **UDP**: Connectionless, sangat cepat, tanpa konfirmasi (cocok untuk Video Streaming & Game Online).\n3. **Internet Layer**: IP (IPv4/IPv6), ICMP (Ping), ARP.\n4. **Network Access Layer**: Ethernet (IEEE 802.3) & Wi-Fi (IEEE 802.11).",
+      "illustration": "<div class='tech-diagram-box'>TCP Handshake: Client &rarr; [SYN] &rarr; Server &rarr; [SYN-ACK] &rarr; Client &rarr; [ACK] (Koneksi Terhubung)</div>",
+      "youtube": "https://www.youtube.com/embed/PpsEaqJV_A0",
+      "summary": "Port number memisahkan jalur komunikasi untuk aplikasi yang berbeda dalam satu alamat IP.",
+      "nextId": "routing"
+    },
+    {
+      "id": "routing",
+      "title": "Konsep Routing & Routing Table",
+      "category": "Routing & Switching",
+      "icon": "fa-solid fa-route",
+      "explanation": "Routing adalah proses meneruskan paket data dari satu segmen jaringan asal menuju jaringan tujuan di luar segmen lokal berdasarkan tabel keputusan (Routing Table).\n\n- **Static Routing**:\n  - Rute diisikan secara manual oleh Administrator Jaringan.\n  - **Kelebihan**: Sangat aman & tidak membebani CPU router.\n  - **Kelemahan**: Tidak fleksibel jika rute terputus di jaringan skala besar.\n\n- **Dynamic Routing**:\n  - Router saling berkomunikasi otomatis mempelajari rute terbaik menggunakan protokol dinamik.\n  - **Protokol**: OSPF (Link-State), BGP (Path-Vector Internet Backbone), RIP (Distance-Vector).",
+      "illustration": "<div class='tech-diagram-box'>Host-A (192.168.1.10) &rarr; Router-1 &rarr; [Routing Decision] &rarr; Router-2 &rarr; Server-B (10.0.0.5)</div>",
+      "youtube": "https://www.youtube.com/embed/0h5S3d6y4_g",
+      "summary": "Router memeriksa IP Destinasi pada header paket dan mencocokkannya dengan Routing Table.",
+      "nextId": "switching"
+    },
+    {
+      "id": "switching",
+      "title": "Switching & Virtual LAN (VLAN)",
+      "category": "Routing & Switching",
+      "icon": "fa-solid fa-toggle-on",
+      "explanation": "Switching beroperasi di Layer 2 untuk menghubungkan perangkat-perangkat dalam 1 segmen LAN fisik menggunakan tabel MAC Address (CAM Table).\n\n- **VLAN (Virtual Local Area Network)**:\n  - Membagi switch fisik tunggal menjadi beberapa grup LAN terisolasi secara logis.\n  - **Contoh**: Port 1-12 untuk VLAN 10 (Siswa), Port 13-24 untuk VLAN 20 (Guru).\n  - **Trunking (IEEE 802.1Q)**: Jalur kabel tunggal antar switch yang membawa data banyak VLAN sekaligus.",
+      "illustration": "<div class='tech-diagram-box'>Switch Fisik Single &rarr; [VLAN 10: Keuangan] | [VLAN 20: IT Support] (Domain Broadcast Terpisah)</div>",
+      "youtube": "https://www.youtube.com/embed/MzwS8E1pS-E",
+      "summary": "VLAN meningkatkan efisiensi bandwith dengan menekan domain broadcast dan mengamankan akses data internal.",
+      "nextId": "firewall"
+    },
+    {
+      "id": "firewall",
+      "title": "Firewall & Keamanan Siber",
+      "category": "Keamanan Jaringan",
+      "icon": "fa-solid fa-shield-halved",
+      "explanation": "Firewall adalah sistem pertahanan jaringan yang memeriksa dan menyaring paket lalulintas data yang masuk dan keluar berdasarkan aturan Access Control List (ACL) yang ditetapkan.\n\nTipe-Tipe Firewall:\n1. **Packet Filtering Firewall**: Menyaring berdasarkan IP Asal/Tujuan dan Port (Layer 3/4).\n2. **Stateful Inspection**: Memantau status koneksi aktif yang sedang berlangsung.\n3. **NGFW (Next-Generation Firewall)**: Melakukan Deep Packet Inspection (DPI) hingga Layer 7 Aplikasi, pencegahan peretasan (IPS/IDS), dan anti-malware.",
+      "illustration": "<div class='tech-diagram-box'><span class='text-danger'>Internet (Untrusted)</span> &rarr; [<i class='fa-solid fa-shield-cat text-cyan mx-2'></i> Firewall ACL] &rarr; <span class='text-success'>LAN Internal (Protected)</span></div>",
+      "youtube": "https://www.youtube.com/embed/kWEx4kW326w",
+      "summary": "Firewall mencegah ancaman luar, serangan DDoS, penyusupan Port, dan malware masuk ke jaringan privat.",
+      "nextId": "server"
+    },
+    {
+      "id": "server",
+      "title": "Layanan Server Jaringan",
+      "category": "Server & Cloud",
+      "icon": "fa-solid fa-server",
+      "explanation": "Server adalah komputer berkemampuan tinggi yang menyediakan data, aplikasi, dan sumber daya bagi klien (Client).\n\nLayanan Layanan Server Vital:\n- **DNS Server (Domain Name System)**: Menerjemahkan nama domain (`teachit.id`) menjadi IP server (`103.150.90.12`).\n- **DHCP Server**: Memberikan pengalamatan IP otomatis kepada klien baru yang terhubung jaringan.\n- **Web Server**: Menyajikan halaman web HTML/CSS/JS menggunakan Nginx atau Apache.\n- **Database Server**: Menyimpan data transaksi terstruktur menggunakan MySQL/PostgreSQL.",
+      "illustration": "<div class='tech-diagram-box'>Client Query &rarr; DNS Resolution &rarr; Translasi Domain ke IP &rarr; Koneksi Web Server</div>",
+      "youtube": "https://www.youtube.com/embed/2ZUxoi7YNgs",
+      "summary": "Layanan DNS dan DHCP adalah layanan server mendasar agar klien dapat berselancar di internet secara praktis.",
+      "nextId": "virtualisasi"
+    },
+    {
+      "id": "virtualisasi",
+      "title": "Virtualisasi Sistem & Hypervisor",
+      "category": "Server & Cloud",
+      "icon": "fa-solid fa-boxes-stacked",
+      "explanation": "Virtualisasi adalah teknologi abstraksi perangkat keras yang memungkinkan satu mesin komputer fisik menjalankan beberapa Sistem Operasi (Virtual Machine / VM) secara independen di saat bersamaan.\n\n- **Hypervisor Type-1 (Bare-Metal)**:\n  - Diinstal langsung di atas hardware fisik tanpa OS pendamping.\n  - Contoh: Proxmox VE, VMware ESXi, Microsoft Hyper-V Server.\n- **Hypervisor Type-2 (Hosted)**:\n  - Diinstal di atas Sistem Operasi Host (seperti Windows/Linux).\n  - Contoh: Oracle VirtualBox, VMware Workstation.",
+      "illustration": "<div class='tech-diagram-box'>Physical Hardware &rarr; Hypervisor &rarr; [VM 1: Ubuntu] | [VM 2: Windows Server] | [VM 3: Mikrotik]</div>",
+      "youtube": "https://www.youtube.com/embed/FZR03C9q030",
+      "summary": "Virtualisasi menghemat biaya hardware server, konsumsi listrik, serta mempermudah prosedur backup/snapshot.",
+      "nextId": "cloud-computing"
+    },
+    {
+      "id": "cloud-computing",
+      "title": "Komputasi Awan (Cloud Computing)",
+      "category": "Server & Cloud",
+      "icon": "fa-solid fa-cloud",
+      "explanation": "Cloud Computing adalah model penyediaan sumber daya komputasi (server, storage, database, jaringan) secara fleksibel melalui jaringan internet berbasis langganan (Pay-as-you-go).\n\nModel Layanan Cloud:\n1. **IaaS (Infrastructure as a Service)**: Sewa server VM, storage, & jaringan (AWS EC2, Google Compute Engine, DigitalOcean).\n2. **PaaS (Platform as a Service)**: Platform siap pakai untuk deploy aplikasi tanpa urus OS (Heroku, Vercel, Firebase).\n3. **SaaS (Software as a Service)**: Aplikasi software siap pakai di browser (Google Workspace, Microsoft 365, Zoom).",
+      "illustration": "<div class='tech-diagram-box'><i class='fa-solid fa-cloud fa-3x text-cyan mb-2'></i><br>Layanan: IaaS | PaaS | SaaS (Provider: AWS, Google Cloud, Azure)</div>",
+      "youtube": "https://www.youtube.com/embed/M988_fsOSWo",
+      "summary": "Cloud Computing memungkinkan skala infrastruktur IT secara cepat tanpa investasi modal pusat data fisik sendiri.",
+      "nextId": null
+    }
+  ],
+  "rpl": [
+    {
+      "id": "algoritma-flowchart",
+      "title": "Algoritma, Flowchart & Pseudocode",
+      "category": "Dasar Pemrograman",
+      "icon": "fa-solid fa-code-branch",
+      "explanation": "Logika pemrograman dibangun atas 3 alat utama perancangan solusi komputasi:\n\n1. **Algoritma**: Urutan langkah-langkah logis dan sistematis untuk memecahkan suatu masalah secara terstruktur.\n2. **Flowchart**: Diagram visual yang menggunakan simbol standar untuk menggambarkan alur program:\n   - **Oval**: Terminal Start / End.\n   - **Jajaran Genjang**: Input / Output data.\n   - **Persegi Panjang**: Proses kalkulasi/manipulasi data.\n   - **Belah Ketupat (Diamond)**: Kondisi percabangan / keputusan.\n3. **Pseudocode**: Penulisan kode semu menyerupai bahasa pemrograman yang mudah dibaca manusia.",
+      "code": "// Contoh Pseudocode Menghitung Luas Persegi Panjang\nALGORITMA HitungLuas\nDEKLARASI:\n  var panjang, lebar, luas : INTEGER\nALGORITMA:\n  INPUT(panjang)\n  INPUT(lebar)\n  luas <- panjang * lebar\n  OUTPUT(luas)",
+      "output": "Input Panjang: 12 | Input Lebar: 5\nLuas Terhitung: 60",
+      "exercise": "Tuliskan pseudocode untuk mengecek apakah sebuah angka tergolong positif, negatif, atau nol!",
+      "summary": "Menguasai algoritma dan flowchart memudahkan programmer menyusun logika sebelum menulis baris kode nyata."
+    },
+    {
+      "id": "html5-dasar",
+      "title": "Struktur Semantik HTML5",
+      "category": "Frontend Web",
+      "icon": "fa-brands fa-html5",
+      "explanation": "HTML5 (HyperText Markup Language) adalah bahasa markup standar untuk membangun struktur dan konten halaman web, mulai dari teks, gambar, formulir, hingga elemen multimedia audio dan video.\n\nHTML5 memperkenalkan sejumlah elemen semantik yang membuat struktur dokumen lebih jelas dan ramah mesin pencari:\n- **<header> & <footer>**: Menandai bagian kepala dan kaki halaman atau sebuah bagian konten.\n- **<nav>**: Mengelompokkan tautan navigasi utama situs.\n- **<main> & <article>**: Menampung konten inti yang unik pada sebuah halaman.\n- **<section> & <aside>**: Membagi halaman menjadi beberapa bagian tematik dan konten pendukung.\n- **Form & Input Baru**: Tipe input modern seperti email, date, number, dan range mempermudah validasi data di sisi browser.\n\nDengan struktur semantik yang benar, mesin pencari seperti Google lebih mudah memahami hierarki konten (SEO), sekaligus meningkatkan aksesibilitas bagi pengguna pembaca layar (screen reader).",
+      "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Aplikasi TeachIT</title>\n</head>\n<body>\n  <header>\n    <h1>TeachIT Indonesia</h1>\n  </header>\n  <nav>\n    <a href=\"#\">Home</a> | <a href=\"#\">Materi</a>\n  </nav>\n  <main>\n    <article>\n      <h2>Belajar HTML5 Semantik</h2>\n      <p>Tag semantik membuat struktur kode rapi dan SEO friendly.</p>\n    </article>\n  </main>\n  <footer>\n    <p>&copy; 2026 TeachIT Indonesia</p>\n  </footer>\n</body>\n</html>",
+      "output": "Struktur dokumen HTML5 modern berstandar semantik utuh.",
+      "exercise": "Buatlah formulir pendaftaran HTML5 yang berisi input nama, email, password, radio button gender, dan tombol submit!",
+      "summary": "Elemen semantik seperti header, nav, main, article, dan footer memudahkan mesin peramban membaca hierarki halaman."
+    },
+    {
+      "id": "css3-styling",
+      "title": "CSS3 Flexbox, Grid & Glassmorphism",
+      "category": "Frontend Web",
+      "icon": "fa-brands fa-css3-alt",
+      "explanation": "CSS3 (Cascading Style Sheets) adalah bahasa stylesheet yang mengatur tampilan visual sebuah halaman web, mencakup warna, tata letak, tipografi, hingga animasi interaktif.\n\nDua sistem layout modern yang wajib dikuasai seorang Frontend Developer adalah:\n- **Flexbox**: Mengatur elemen dalam satu baris atau kolom (1 dimensi), ideal untuk navbar, tombol sejajar, dan card horizontal.\n- **CSS Grid**: Mengatur elemen dalam baris dan kolom sekaligus (2 dimensi), ideal untuk layout halaman kompleks seperti dashboard.\n- **Media Query**: Menyesuaikan tampilan otomatis berdasarkan ukuran layar perangkat (responsive design).\n- **Glassmorphism**: Tren desain modern yang memakai efek kaca buram (backdrop-filter: blur) dipadukan transparansi dan border tipis bercahaya.\n\nPenguasaan CSS3 yang baik memungkinkan developer membangun antarmuka yang estetis sekaligus tetap nyaman digunakan di berbagai ukuran layar, dari smartphone hingga monitor lebar.",
+      "code": "/* Modern Cyber Glass Card Style */\n.glass-card {\n  background: rgba(17, 24, 39, 0.75);\n  backdrop-filter: blur(16px);\n  -webkit-backdrop-filter: blur(16px);\n  border: 1px solid rgba(0, 242, 254, 0.3);\n  border-radius: 16px;\n  padding: 24px;\n  color: #f8fafc;\n  transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n.glass-card:hover {\n  transform: translateY(-6px);\n  box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);\n}",
+      "output": "Kartu antarmuka futuristik bertema kaca tembus pandang dengan efek glow neon saat cursor diarahkan.",
+      "exercise": "Buat layout CSS Grid 3 kolom yang otomatis menyesuaikan diri menjadi 1 kolom saat lebar layar di bawah 768px!",
+      "summary": "Penggunaan Flexbox & CSS Grid mempercepat pembuatan layout web yang responsif di HP dan Laptop."
+    },
+    {
+      "id": "javascript-es6",
+      "title": "JavaScript ES6+ Fitur Modern",
+      "category": "Frontend Web",
+      "icon": "fa-brands fa-square-js",
+      "explanation": "JavaScript adalah bahasa pemrograman inti web yang membuat halaman menjadi interaktif dan dinamis, berjalan langsung di browser pengguna tanpa perlu proses kompilasi terpisah.\n\nStandar ES6 (ECMAScript 2015) dan versi setelahnya menghadirkan sintaksis yang jauh lebih ringkas dan powerful:\n- **Arrow Function**: Penulisan fungsi singkat seperti (a, b) => a + b tanpa kata kunci function.\n- **Destructuring**: Mengekstrak nilai dari array atau object langsung ke variabel baru.\n- **Template Literal**: Menyisipkan variabel ke dalam string menggunakan tanda backtick dan ${}.\n- **Promise & Async/Await**: Mengelola operasi asynchronous seperti pengambilan data API tanpa callback bertingkat (callback hell).\n- **Module (import/export)**: Memecah kode menjadi berkas-berkas kecil yang dapat dipakai ulang.\n\nJavaScript modern menjadi fondasi wajib sebelum mempelajari framework populer seperti React, Vue, atau Node.js di sisi server.",
+      "code": "// Async/Await & Fetch API\nconst getMateriData = async () => {\n  try {\n    const response = await fetch('data/materi.json');\n    const data = await response.json();\n    console.log(`Total Topik TJKT: ${data.tjkt.length}`);\n  } catch (error) {\n    console.error('Terjadi kesalahan:', error);\n  }\n};\n\ngetMateriData();",
+      "output": "Console Log Output: Total Topik TJKT: 16",
+      "exercise": "Gunakan fungsi `.filter()` di JavaScript untuk menyaring array berisi angka agar menghasilkan angka yang nilainya lebih dari 50!",
+      "summary": "JavaScript ES6+ wajib dikuasai untuk membuat aplikasi web interaktif dan komunikasi API dinamis."
+    },
+    {
+      "id": "php-backend",
+      "title": "PHP Fundamentals Server-Side",
+      "category": "Backend Web",
+      "icon": "fa-brands fa-php",
+      "explanation": "PHP (Hypertext Preprocessor) adalah bahasa pemrograman scripting yang berjalan di sisi server (server-side) untuk mengolah logika bisnis sebelum hasil akhirnya dikirim sebagai HTML ke browser pengguna.\n\nBeberapa kemampuan inti PHP dalam pengembangan web meliputi:\n- **Pengolahan Formulir**: Menerima dan memvalidasi data yang dikirim pengguna melalui method GET atau POST.\n- **Manajemen Session & Cookie**: Menjaga status login pengguna selama menjelajahi halaman.\n- **Koneksi Database**: Berkomunikasi dengan MySQL/PostgreSQL menggunakan ekstensi PDO atau MySQLi.\n- **Percabangan & Perulangan**: Struktur kontrol seperti if-else, switch, for, dan while untuk menyusun logika program.\n\nPHP tetap menjadi salah satu bahasa backend paling populer di dunia karena didukung hampir seluruh hosting web dan menjadi fondasi CMS besar seperti WordPress serta framework Laravel.",
+      "code": "<?php\n// Evaluasi Nilai Kelulusan PHP\n$nilaiSiswa = 85;\n$kkm = 75;\n\nif ($nilaiSiswa >= $kkm) {\n    $status = \"LULUS UJIAN\";\n} else {\n    $status = \"BELUM LULUS\";\n}\n\necho \"Nilai Anda: $nilaiSiswa - Status: $status\";\n?>",
+      "output": "Nilai Anda: 85 - Status: LULUS UJIAN",
+      "exercise": "Buat fungsi PHP yang menerima parameter nama dan jam, lalu mengembalikan sapaan Pagi, Siang, atau Malam!",
+      "summary": "PHP memproses data di sisi server sebelum mengirimkan hasil akhir dalam bentuk kode HTML murni ke browser."
+    },
+    {
+      "id": "mysql-database",
+      "title": "Database Relasional MySQL & SQL",
+      "category": "Database",
+      "icon": "fa-solid fa-database",
+      "explanation": "MySQL adalah sistem manajemen basis data relasional (RDBMS) open-source yang menyimpan data dalam bentuk tabel terstruktur berisi baris (record) dan kolom (field), lalu dikelola menggunakan bahasa SQL (Structured Query Language).\n\nEmpat kategori perintah SQL yang paling sering digunakan:\n- **DDL (Data Definition Language)**: CREATE, ALTER, DROP untuk membuat dan mengubah struktur tabel.\n- **DML (Data Manipulation Language)**: INSERT, UPDATE, DELETE untuk mengelola isi data.\n- **DQL (Data Query Language)**: SELECT untuk mengambil dan menampilkan data, dapat dikombinasikan dengan WHERE, JOIN, dan ORDER BY.\n- **DCL (Data Control Language)**: GRANT dan REVOKE untuk mengatur hak akses pengguna database.\n\nPemahaman relasi antar tabel (One-to-Many, Many-to-Many) melalui Primary Key dan Foreign Key sangat penting agar data tetap konsisten dan tidak redundan.",
+      "code": "-- Membuat Tabel & Perintah SQL\nCREATE TABLE siswa (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  nama VARCHAR(100) NOT NULL,\n  jurusan VARCHAR(50) DEFAULT 'RPL',\n  nilai_quiz INT DEFAULT 0\n);\n\n-- Menyisipkan Data & Mengkueri\nINSERT INTO siswa (nama, nilai_quiz) VALUES ('Rian Tech', 90);\nSELECT * FROM siswa WHERE nilai_quiz >= 80 ORDER BY nilai_quiz DESC;",
+      "output": "Tabel siswa dibuat dan menampilkan baris data Rian Tech dengan nilai 90.",
+      "exercise": "Tuliskan sintaks SQL `UPDATE` untuk mengubah jurusan siswa bernama Rian Tech menjadi 'TJKT'!",
+      "summary": "Perintah DDL (CREATE, ALTER) membentuk struktur tabel, sedangkan DML (SELECT, INSERT, UPDATE, DELETE) mengelola datanya."
+    },
+    {
+      "id": "git-github",
+      "title": "Git & GitHub Version Control",
+      "category": "Developer Tools",
+      "icon": "fa-brands fa-github",
+      "explanation": "Git adalah sistem pengontrol versi terdistribusi (Distributed Version Control System) yang melacak setiap perubahan pada kode sumber proyek, sehingga developer dapat kembali ke versi sebelumnya kapan pun dibutuhkan. GitHub adalah platform cloud yang menghosting repositori Git agar dapat diakses dan dikerjakan bersama tim.\n\nKonsep dasar yang wajib dipahami:\n- **Repository**: Folder proyek yang dilacak riwayat perubahannya oleh Git.\n- **Commit**: Snapshot atau catatan perubahan kode pada titik waktu tertentu.\n- **Branch**: Cabang pengembangan terpisah agar fitur baru tidak mengganggu kode utama (main).\n- **Pull Request**: Permintaan menggabungkan perubahan dari satu branch ke branch lain, biasanya disertai code review tim.\n- **Merge & Conflict**: Proses menyatukan perubahan, yang terkadang memerlukan penyelesaian konflik kode secara manual.\n\nMenguasai Git & GitHub adalah standar wajib industri software, karena hampir seluruh perusahaan teknologi menggunakannya untuk kolaborasi tim.",
+      "code": "# Perintah Standar Git Workflow\ngit init\ngit add .\ngit commit -m \"feat: menambah fitur dark mode\"\ngit branch -M main\ngit remote add origin https://github.com/user/teachit.git\ngit push -u origin main",
+      "output": "Repositori lokal berhasil terunggah dan tersinkronisasi di GitHub.",
+      "exercise": "Sebutkan perintah Git yang digunakan untuk membatalkan perubahan file ke kondisi commit terakhir!",
+      "summary": "Git memungkinkan pengembang bekerja dalam tim secara aman tanpa risiko menimpa kode rekan sejawat."
+    },
+    {
+      "id": "oop-concept",
+      "title": "Object Oriented Programming (OOP)",
+      "category": "Pemrograman Lanjut",
+      "icon": "fa-solid fa-cubes",
+      "explanation": "OOP adalah paradigma pemrograman berbasis objek yang mengelompokkan data (atribut) dan perilaku (method) dalam struktur **Class**.\n\n4 Pilar Utama OOP:\n1. **Encapsulation**: Pembungkusan variabel internal agar tidak diakses bebas dari luar.\n2. **Inheritance**: Pewarisan atribut dan method dari Class Induk ke Class Anak.\n3. **Polymorphism**: Method bernama sama yang memiliki perilaku berbeda pada class berbeda.\n4. **Abstraction**: Menyembunyikan detail implementasi kompleks dan hanya menampilkan antarmuka utama.",
+      "code": "// Class OOP JavaScript\nclass Programmer {\n  constructor(nama, bahasa) {\n    this.nama = nama;\n    this.bahasa = bahasa;\n  }\n\n  coding() {\n    return `${this.nama} sedang menulis kode ${this.bahasa}!`;\n  }\n}\n\nconst dev = new Programmer('Antigravity', 'JavaScript');\nconsole.log(dev.coding());",
+      "output": "Console Log: Antigravity sedang menulis kode JavaScript!",
+      "exercise": "Buat class `Mobil` dengan properti `merk` dan `kecepatan`, serta method `tambahKecepatan()`!",
+      "summary": "OOP memudahkan pemeliharaan aplikasi skala besar dengan membagi logika ke dalam komponen-komponen objek mandiri."
+    },
+    {
+      "id": "rest-api",
+      "title": "Arsitektur RESTful API",
+      "category": "Web Service",
+      "icon": "fa-solid fa-network-wired",
+      "explanation": "REST (Representational State Transfer) adalah standar arsitektur komunikasi layanan web (API) yang menggunakan protokol HTTP standar untuk pertukaran data stateless.\n\nStandar Metode HTTP:\n- **GET**: Mengambil data dari server.\n- **POST**: Mengirimkan data baru ke server.\n- **PUT / PATCH**: Memperbarui data yang ada di server.\n- **DELETE**: Menghapus data dari server.",
+      "code": "// Endpoint Design REST API\nGET    /api/v1/materi           -> Mendapatkan daftar materi\nGET    /api/v1/materi/12        -> Mendapatkan materi ID 12\nPOST   /api/v1/materi           -> Membuat materi baru\nDELETE /api/v1/materi/12        -> Menghapus materi ID 12",
+      "output": "HTTP Response 200 OK dengan Payload JSON data.",
+      "exercise": "Sebutkan nomor HTTP Status Code yang menandakan bahwa resource tidak ditemukan di server!",
+      "summary": "REST API menghubungkan frontend web/mobile dengan backend server secara fleksibel melalui format data JSON."
+    },
+    {
+      "id": "json-data",
+      "title": "JSON (JavaScript Object Notation)",
+      "category": "Web Service",
+      "icon": "fa-solid fa-file-code",
+      "explanation": "JSON (JavaScript Object Notation) adalah format pertukaran data berbasis teks yang ringan, mudah dibaca manusia, dan mudah diproses mesin. Meski namanya berasal dari JavaScript, JSON kini didukung hampir seluruh bahasa pemrograman modern seperti PHP, Python, dan Java.\n\nStruktur data JSON terdiri dari beberapa tipe dasar:\n- **Object**: Kumpulan pasangan key-value yang dibungkus kurung kurawal {}.\n- **Array**: Kumpulan data berurutan yang dibungkus kurung siku [].\n- **String, Number, Boolean, Null**: Tipe nilai dasar yang dapat diisikan ke dalam key.\n- **Nested Object**: Object atau array dapat disisipkan di dalam object lain untuk merepresentasikan data yang lebih kompleks.\n\nJSON menjadi format standar komunikasi data pada RESTful API modern, menggantikan XML yang dianggap lebih berat dan rumit untuk diproses.",
+      "code": "{\n  \"appName\": \"TeachIT Indonesia\",\n  \"version\": \"2.5.0\",\n  \"active\": true,\n  \"modules\": [\"TJKT\", \"RPL\", \"OS Tutorial\"],\n  \"stats\": {\n    \"totalStudents\": 1500,\n    \"rating\": 4.9\n  }\n}",
+      "output": "Struktur data terformat siap dikirim melalui jaringan internet.",
+      "exercise": "Tuliskan fungsi JavaScript yang digunakan untuk mengubah string teks JSON menjadi Object JavaScript!",
+      "summary": "Fungsi `JSON.parse()` mengubah string ke object, sedangkan `JSON.stringify()` mengubah object menjadi string JSON."
+    },
+    {
+      "id": "framework-intro",
+      "title": "Pengenalan Framework Web",
+      "category": "Framework & Stack",
+      "icon": "fa-solid fa-layer-group",
+      "explanation": "Framework adalah kerangka kerja perangkat lunak berisi kumpulan pustaka (library), aturan arsitektur, dan struktur folder siap pakai yang mempercepat proses pengembangan aplikasi tanpa perlu menulis semua kode dari nol.\n\nSecara umum framework web dibagi menjadi dua kategori besar:\n- **Framework Frontend (Client-Side)**: Berjalan di browser untuk membangun antarmuka pengguna, contohnya React.js, Vue.js, Angular, dan Svelte.\n- **Framework Backend (Server-Side)**: Berjalan di server untuk mengolah logika bisnis dan database, contohnya Laravel (PHP), Express.js (Node.js), Django (Python), dan Spring Boot (Java).\n- **Prinsip DRY**: Framework menerapkan prinsip Don't Repeat Yourself agar kode lebih ringkas dan mudah dirawat.\n- **Konsistensi Tim**: Struktur folder baku memudahkan banyak developer bekerja pada proyek yang sama tanpa kebingungan.\n\nMemilih framework yang tepat bergantung pada skala proyek, performa yang dibutuhkan, serta ekosistem komunitas pendukungnya.",
+      "code": "// Kategori Framework Popular:\n// Frontend UI: React.js, Vue.js, Angular, Svelte\n// Backend Server: Express.js (Node), Laravel (PHP), Django (Python), Spring Boot (Java)",
+      "output": "Efisiensi pengkodean meningkat pesat dan konsistensi struktur terjamin.",
+      "exercise": "Sebutkan 2 contoh framework JavaScript untuk sisi client (Frontend) dan 2 untuk sisi server (Backend)!",
+      "summary": "Framework menerapkan prinsip DRY (Don't Repeat Yourself) dan standar arsitektur aplikasi industri."
+    },
+    {
+      "id": "nodejs-express",
+      "title": "Node.js & Express.js Backend Engine",
+      "category": "Framework & Stack",
+      "icon": "fa-brands fa-node-js",
+      "explanation": "Node.js adalah runtime environment berbasis mesin V8 milik Google Chrome yang memungkinkan kode JavaScript dieksekusi di luar browser, yaitu langsung di sisi server. Express.js adalah framework minimalis di atas Node.js yang mempermudah pembuatan web server dan REST API.\n\nBeberapa konsep kunci dalam ekosistem Node.js:\n- **Non-Blocking I/O**: Node.js memproses banyak permintaan secara bersamaan tanpa saling menunggu, sehingga sangat cepat menangani ribuan koneksi.\n- **Event Loop**: Mekanisme inti yang menjadwalkan eksekusi kode asynchronous secara efisien.\n- **NPM (Node Package Manager)**: Ekosistem pustaka pihak ketiga terbesar di dunia pemrograman untuk mempercepat pengembangan.\n- **Routing di Express**: Mendefinisikan endpoint API seperti GET, POST, PUT, dan DELETE dengan sintaksis yang ringkas.\n\nKombinasi Node.js dan Express.js banyak digunakan untuk membangun REST API, aplikasi real-time seperti chat, hingga microservices skala besar.",
+      "code": "const express = require('express');\nconst app = express();\nconst PORT = 3000;\n\napp.use(express.json());\n\napp.get('/api/status', (req, res) => {\n  res.json({ status: 'Online', system: 'TeachIT Server Node' });\n});\n\napp.listen(PORT, () => console.log(`Server aktif di port ${PORT}`));",
+      "output": "Console Log: Server aktif di port 3000",
+      "exercise": "Ubah kode Express di atas agar route `POST /api/login` merespons pesan 'Login Berhasil'!",
+      "summary": "Node.js menggunakan arsitektur Non-blocking I/O Event Loop yang sangat cepat menangani ribuan koneksi bersamaan."
+    },
+    {
+      "id": "react-frontend",
+      "title": "React.js Component UI",
+      "category": "Framework & Stack",
+      "icon": "fa-brands fa-react",
+      "explanation": "React.js adalah pustaka (library) JavaScript buatan Meta (Facebook) yang digunakan untuk membangun antarmuka pengguna (UI) berbasis komponen yang dapat digunakan kembali (reusable) dan efisien saat memperbarui tampilan.\n\nKonsep inti yang membedakan React dari JavaScript biasa:\n- **Virtual DOM**: React memperbarui hanya bagian tampilan yang berubah, bukan me-render ulang seluruh halaman, sehingga jauh lebih cepat.\n- **Component**: Antarmuka dipecah menjadi bagian-bagian kecil independen (Button, Card, Navbar) yang dapat dipakai berulang kali.\n- **Props**: Data yang dikirim dari komponen induk ke komponen anak, bersifat read-only.\n- **State & Hooks**: Data internal komponen yang dapat berubah, dikelola dengan Hooks seperti useState dan useEffect.\n- **JSX**: Sintaksis yang memungkinkan penulisan kode mirip HTML langsung di dalam JavaScript.\n\nReact menjadi salah satu library frontend paling diminati industri karena performanya yang tinggi dan ekosistem komunitasnya yang sangat besar.",
+      "code": "import React, { useState } from 'react';\n\nexport function CounterApp() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div className=\"p-4\">\n      <h3>Hitungan: {count}</h3>\n      <button onClick={() => setCount(count + 1)}>\n        Tambah Hitungan\n      </button>\n    </div>\n  );\n}",
+      "output": "Komponen Tombol interaktif yang memperbarui tampilan secara otomatis tanpa reload halaman.",
+      "exercise": "Apa perbedaan utama antara `props` dan `state` dalam komponen React?",
+      "summary": "React membagi antarmuka menjadi komponen-komponen kecil yang dapat digunakan kembali secara fleksibel."
+    },
+    {
+      "id": "laravel-framework",
+      "title": "Laravel PHP Framework Enterprise",
+      "category": "Framework & Stack",
+      "icon": "fa-brands fa-laravel",
+      "explanation": "Laravel adalah framework PHP modern berarsitektur MVC (Model-View-Controller) yang dikenal karena sintaksisnya yang elegan, fitur bawaan yang lengkap, dan dokumentasi yang sangat rapi bagi pengembang.\n\nBeberapa fitur unggulan Laravel yang mempercepat pengembangan aplikasi enterprise:\n- **Eloquent ORM**: Berinteraksi dengan database menggunakan sintaksis PHP berorientasi objek tanpa perlu menulis query SQL manual.\n- **Blade Templating**: Mesin template ringan untuk menyusun tampilan HTML dinamis secara terstruktur dan reusable.\n- **Migration**: Mengelola perubahan struktur database secara terversi layaknya Git, memudahkan kolaborasi tim.\n- **Artisan CLI**: Command line tool bawaan untuk membuat controller, model, hingga menjalankan migrasi secara otomatis.\n- **Keamanan Bawaan**: Perlindungan otomatis terhadap serangan CSRF, SQL Injection, dan XSS.\n\nLaravel banyak dipilih untuk membangun aplikasi web skala enterprise karena ekosistemnya yang matang dan komunitas developer PHP terbesar di dunia.",
+      "code": "<?php\n// Controller Laravel Example\nnamespace App\\Http\\Controllers;\nuse App\\Models\\Materi;\n\nclass MateriController extends Controller {\n    public function index() {\n        $data = Materi::all();\n        return view('materi.index', compact('data'));\n    }\n}",
+      "output": "Mata rantai aliran data MVC Laravel terhubung sempurna.",
+      "exercise": "Perintah Artisan CLI apa yang digunakan untuk membuat file Controller baru di Laravel?",
+      "summary": "Laravel mempercepat pembuatan web skala enterprise dengan keamanan bawaan terhadap CSRF, SQL Injection, dan XSS."
+    },
+    {
+      "id": "uml-diagram",
+      "title": "UML (Unified Modeling Language)",
+      "category": "Desain Perangkat Lunak",
+      "icon": "fa-solid fa-sitemap",
+      "explanation": "UML adalah bahasa standar pemodelan visual untuk mendokumentasikan spesifikasi dan arsitektur sistem software sebelum tahap koding.\n\nDiagram Utama UML:\n- **Use Case Diagram**: Menggambarkan peran Aktor dan interaksi fungsionalitas sistem.\n- **Class Diagram**: Menggambarkan struktur class, atribut, method, serta hubungan antar class.\n- **Sequence Diagram**: Menggambarkan urutan pertukaran pesan antar objek seiring berjalannya waktu.",
+      "illustration": "<div class='tech-diagram-box'>[Aktor: Siswa] &rarr; (Use Case: Kerjakan Quiz) &rarr; [System Database]</div>",
+      "output": "Rancangan cetak biru (blueprint) sistem perangkat lunak yang jelas.",
+      "exercise": "Diagram UML manakah yang berfokus menggambarkan alur aktivitas sistem langkah demi langkah?",
+      "summary": "UML mencegah salah paham dalam tim pengembang dengan memvisualisasikan seluruh arsitektur sistem."
+    },
+    {
+      "id": "sdlc-methodology",
+      "title": "Siklus SDLC & Metodologi Agile",
+      "category": "Metodologi",
+      "icon": "fa-solid fa-spinner",
+      "explanation": "SDLC (Software Development Life Cycle) adalah tahapan siklus pengembangan perangkat lunak:\n1. **Planning**: Analisis kebutuhan & studi kelayakan.\n2. **Design**: Perancangan arsitektur UML & UI/UX.\n3. **Coding**: Penulisan kode program.\n4. **Testing**: Pengujian QA & perbaikan bug.\n5. **Deployment**: Peluncuran aplikasi ke server produksi.\n6. **Maintenance**: Pemeliharaan & pembaruan rutin.\n\nMetodologi:\n- **Waterfall**: Sekuensial kaku bertahap.\n- **Agile Scrum**: Iteratif cepat berbasis siklus Sprint 1-4 minggu.",
+      "illustration": "<div class='tech-diagram-box'>Plan &rarr; Design &rarr; Code &rarr; Test &rarr; Deploy &rarr; Maintain</div>",
+      "output": "Proyek software terkelola dengan baik, tepat waktu, dan minim error.",
+      "exercise": "Jelaskan istilah 'Sprint' dalam kerangka kerja Agile Scrum!",
+      "summary": "Agile Scrum memungkinkan tim adaptif terhadap perubahan kebutuhan klien di tengah proses pengembangan."
+    },
+    {
+      "id": "testing-deployment",
+      "title": "Software Testing & CI/CD Deployment",
+      "category": "Quality & DevOps",
+      "icon": "fa-solid fa-rocket",
+      "explanation": "Software Testing adalah proses memastikan aplikasi berjalan sesuai spesifikasi dan bebas dari bug sebelum dirilis ke pengguna, sedangkan Deployment adalah proses menerbitkan aplikasi agar dapat diakses secara publik di server produksi.\n\nBeberapa konsep penting dalam siklus pengujian dan rilis software:\n- **Unit Testing**: Menguji fungsi atau komponen kode terkecil secara terisolasi.\n- **Integration Testing**: Menguji interaksi antar beberapa modul atau layanan agar bekerja sesuai harapan saat digabungkan.\n- **CI/CD (Continuous Integration/Continuous Deployment)**: Otomatisasi proses build, testing, hingga deployment setiap kali ada perubahan kode baru.\n- **Containerization (Docker)**: Mengemas aplikasi beserta seluruh dependensinya ke dalam container agar berjalan konsisten di lingkungan mana pun.\n\nPenerapan testing dan CI/CD yang matang membuat tim pengembang dapat merilis fitur baru lebih cepat, stabil, dan minim risiko downtime produksi.",
+      "code": "# Contoh Docker deployment otomatis\ndocker build -t teachit-app:v1 .\ndocker run -d -p 80:80 --name teachit-live teachit-app:v1",
+      "output": "Aplikasi ter-deploy otomatis dalam Container Docker terisolasi.",
+      "exercise": "Sebutkan perbedaan antara Unit Testing dan Integration Testing!",
+      "summary": "Penerapan CI/CD dan Docker mempercepat proses rilis software secara stabil tanpa downtime."
+    }
+  ],
+  "os": [
+    {
+      "id": "install-win10",
+      "title": "Tutorial Instalasi Windows 10 Clean Install",
+      "category": "Windows",
+      "icon": "fa-brands fa-windows",
+      "tools": [
+        "Flashdisk USB minimal 8GB",
+        "ISO Windows 10 Original Microsoft",
+        "Aplikasi Rufus",
+        "Laptop/PC RAM minimal 2GB"
+      ],
+      "requirements": "Backup seluruh data penting di Drive C ke harddisk eksternal sebelum proses format.",
+      "steps": [
+        "Unduh berkas ISO resmi Windows 10 dari situs Microsoft Media Creation Tool.",
+        "Buka software Rufus, pilih Drive USB Flashdisk, lalu muat berkas ISO Windows 10.",
+        "Pilih skema partisi GPT untuk PC mode UEFI, atau MBR untuk PC mode Legacy BIOS.",
+        "Klik START dan tunggu hingga proses flashing USB Bootable selesai 100%.",
+        "Tancapkan USB Bootable ke PC target, lalu nyalakan PC.",
+        "Tekan Boot Key saat logo menyala (F12, F11, F2, atau Del tergantung merk motherboard).",
+        "Pilih USB Flashdisk dari menu Boot Order list.",
+        "Di menu Setup Windows 10, tentukan Language (English/Indonesia) dan Keyboard layout.",
+        "Klik 'Install Now', lalu masukkan Product Key (atau pilih 'I don't have a product key').",
+        "Pilih tipe instalasi 'Custom: Install Windows only (advanced)'.",
+        "Pilih partisi Sistem Drive C target, klik 'Format', lalu klik Next.",
+        "Tunggu proses instalasi berkas menyalin hingga 100% dan PC melakukan restart otomatis.",
+        "Selesaikan pengaturan OOBE awal (Region, Username, Password, dan Privacy Settings)."
+      ],
+      "tips": "Cabut koneksi WiFi/Kabel LAN saat proses setup OOBE agar Anda bisa membuat Local Account tanpa paksaan login akun Microsoft.",
+      "faq": [
+        {
+          "q": "Berapa lama waktu instalasi Windows 10?",
+          "a": "Rata-rata 15-25 menit menggunakan SSD, atau 30-45 menit jika menggunakan HDD standar."
+        },
+        {
+          "q": "Apakah aktivasi Windows 10 wajib dilakukan saat instalasi?",
+          "a": "Tidak wajib. Anda bisa klik 'I don't have a product key' saat instalasi dan mengaktivasi lisensinya belakangan melalui menu Settings > Activation."
+        }
+      ]
+    },
+    {
+      "id": "install-win11",
+      "title": "Tutorial Instalasi Windows 11 & Bypass TPM 2.0",
+      "category": "Windows",
+      "icon": "fa-brands fa-windows",
+      "tools": [
+        "USB Flashdisk 8GB+",
+        "ISO Windows 11",
+        "Rufus v3.18+ (Fitur Extended Windows 11 Setup)"
+      ],
+      "requirements": "PC mendukung UEFI & Secure Boot (Atau manfaatkan fitur bypass Rufus untuk PC generasi lama).",
+      "steps": [
+        "Jalankan aplikasi Rufus di PC pendukung.",
+        "Pilih file ISO Windows 11 yang telah diunduh.",
+        "Pada jendela konfirmasi Rufus, beri centang opsi 'Remove requirement for 4GB+ RAM, Secure Boot and TPM 2.0'.",
+        "Tancapkan USB Installer ke Laptop target.",
+        "Masuk ke BIOS (Tekan F2/Del saat menyalakan PC) dan pastikan Boot Mode diatur ke UEFI.",
+        "Boot melalui USB Flashdisk dan ikuti instruksi installer Windows 11 modern.",
+        "Pilih partisi GPT target, format, lalu lanjutkan instalasi hingga desktop muncul."
+      ],
+      "tips": "Windows 11 membutuhkan partisi disk GPT murni. Jika disk masih MBR, konversi terlebih dahulu via Command Prompt `diskpart`.",
+      "faq": [
+        {
+          "q": "Apakah aman bypass TPM 2.0 di Windows 11?",
+          "a": "Aman untuk penggunaan harian, namun beberapa fitur keamanan hardware tingkat tinggi akan dinonaktifkan."
+        },
+        {
+          "q": "Apa saja syarat minimum RAM dan penyimpanan Windows 11?",
+          "a": "Minimal RAM 4GB dan ruang penyimpanan kosong 64GB, ditambah prosesor 64-bit generasi terbaru yang mendukung Secure Boot."
+        }
+      ]
+    },
+    {
+      "id": "install-ubuntu",
+      "title": "Tutorial Instalasi Linux Ubuntu Desktop LTS",
+      "category": "Linux",
+      "icon": "fa-brands fa-ubuntu",
+      "tools": [
+        "Flashdisk USB 4GB+",
+        "ISO Ubuntu Desktop (LTS Version)",
+        "BalenaEtcher / Rufus"
+      ],
+      "requirements": "RAM minimal 4GB, Processor Dual-Core 2GHz, Ruang Penyimpanan Kosong 25GB.",
+      "steps": [
+        "Buat Bootable USB Ubuntu menggunakan Rufus atau BalenaEtcher.",
+        "Boot PC target melalui USB Flashdisk.",
+        "Pada layar pembuka GRUB, pilih 'Try or Install Ubuntu'.",
+        "Pilih Bahasa antarmuka dan Tata Letak Keyboard (English US).",
+        "Pilih opsi 'Normal Installation' dan beri centang 'Install third-party software for graphics and Wi-Fi'.",
+        "Pilih jenis instalasi 'Erase disk and install Ubuntu' (atau 'Something else' untuk partisi manual).",
+        "Tentukan titik lokasi zona waktu (Asia/Jakarta).",
+        "Buat nama pengguna (username), nama komputer (hostname), dan kata sandi root.",
+        "Tunggu hingga proses penyalinan berkas selesai, lalu klik 'Restart Now'."
+      ],
+      "tips": "Selalu pilih rilis Ubuntu versi LTS (Long Term Support) karena mendapatkan jaminan dukungan update stabilitas hingga 5 tahun.",
+      "faq": [
+        {
+          "q": "Apakah Linux Ubuntu sepenuhnya gratis?",
+          "a": "Ya! Ubuntu 100% open-source dan gratis bebas dipergunakan tanpa perlu membeli lisensi."
+        },
+        {
+          "q": "Apa perbedaan versi LTS dan versi reguler Ubuntu?",
+          "a": "Versi LTS (Long Term Support) mendapat pembaruan keamanan hingga 5 tahun, sangat cocok untuk pengguna yang menginginkan stabilitas jangka panjang."
+        }
+      ]
+    },
+    {
+      "id": "install-debian",
+      "title": "Tutorial Instalasi Linux Debian Server CLI",
+      "category": "Linux",
+      "icon": "fa-brands fa-linux",
+      "tools": [
+        "ISO Debian Netinst / DVD ISO",
+        "USB Bootable",
+        "VirtualBox / Server Fisik"
+      ],
+      "requirements": "Sangat hemat sumber daya (RAM 1GB sudah cukup untuk mode Server CLI).",
+      "steps": [
+        "Boot PC melalui media installer Debian.",
+        "Pilih metode 'Graphical Install' atau 'Install (Text CLI)'.",
+        "Pilih Bahasa (English) dan Lokasi Wilayah.",
+        "Atur Hostname server (contoh: `server-teachit`) dan Domain Name.",
+        "Masukkan kata sandi untuk akun Superuser Root.",
+        "Buat akun pengguna biasa non-root.",
+        "Pilih partisi 'Guided - use entire disk' untuk membuat partisi otomatis (Root `/` & `swap`).",
+        "Pada langkah 'Software selection', uncheck Desktop Environment dan centang 'SSH server' serta 'standard system utilities'.",
+        "Pasang GRUB Bootloader pada master boot record (`/dev/sda`).",
+        "Selesai dan Reboot."
+      ],
+      "tips": "Debian adalah OS server yang terkenal sangat stabil dan menjadi induk dari distribusi Ubuntu.",
+      "faq": [
+        {
+          "q": "Mengapa Debian disukai untuk server produksi?",
+          "a": "Karena kestabilan paket filenya yang telah diuji secara sangat ketat sebelum dirilis."
+        },
+        {
+          "q": "Apakah Debian menyediakan tampilan Desktop (GUI)?",
+          "a": "Bisa. Debian menyediakan pilihan Desktop Environment seperti GNOME atau XFCE saat instalasi, meski versi Server umumnya hanya menggunakan mode CLI (Command Line Interface)."
+        }
+      ]
+    },
+    {
+      "id": "install-kali",
+      "title": "Tutorial Instalasi Kali Linux (Ethical Hacking)",
+      "category": "Linux",
+      "icon": "fa-solid fa-shield-cat",
+      "tools": [
+        "ISO Kali Linux Installer",
+        "USB Flashdisk 8GB+",
+        "Rufus"
+      ],
+      "requirements": "Ruang disk minimal 20GB untuk menampung ratusan perkakas pengujian penetrasi siber.",
+      "steps": [
+        "Unduh ISO Kali Linux Installer resmi dari situs kali.org.",
+        "Flashing ISO ke USB Flashdisk menggunakan Rufus.",
+        "Masuk ke Boot Menu PC dan jalankan USB Installer.",
+        "Pilih menu 'Graphical Install'.",
+        "Konfigurasi Bahasa, Negara, dan Tata Letak Keyboard.",
+        "Isi Hostname `kali` dan nama akun user default.",
+        "Pilih partisi disk otomatis 'Guided - use entire disk'.",
+        "Tentukan Desktop Environment default (XFCE recommended karena ringan).",
+        "Install GRUB boot loader dan selesaikan instalasi."
+      ],
+      "tips": "Gunakan Kali Linux dalam Virtual Machine jika Anda pemula agar tidak berisiko merusak OS utama laptop Anda.",
+      "faq": [
+        {
+          "q": "Apakah Kali Linux cocok untuk mengetik dokumen harian?",
+          "a": "Tidak disarankan. Kali dirancang khusus untuk riset keamanan siber dan audit penetrasi jaringan."
+        },
+        {
+          "q": "Apakah legal menggunakan Kali Linux?",
+          "a": "Legal selama digunakan untuk pembelajaran, riset keamanan pada sistem milik sendiri, atau pengujian yang memiliki izin resmi (ethical hacking)."
+        }
+      ]
+    },
+    {
+      "id": "virtualmachine-setup",
+      "title": "Panduan Setup Virtual Machine (VirtualBox & VMware)",
+      "category": "Virtual Machine",
+      "icon": "fa-solid fa-desktop",
+      "tools": [
+        "Installer VirtualBox / VMware Workstation",
+        "File ISO Sistem Operasi Target"
+      ],
+      "requirements": "Aktifkan fitur Virtualization (Intel VT-x / AMD-V) di BIOS PC Anda.",
+      "steps": [
+        "Unduh dan install software Oracle VirtualBox.",
+        "Klik tombol 'New' (Baru) untuk membuat mesin virtual baru.",
+        "Beri nama VM (contoh: `Ubuntu-Testing`) dan tentukan tipe OS.",
+        "Alokasikan kapasitas RAM (minimal 2048 MB) dan Processor Cores.",
+        "Buat Virtual Hard Disk baru (VDI) dengan kapasitas minimal 20GB (Dynamically Allocated).",
+        "Masuk ke menu Settings VM &rarr; Storage &rarr; Pasang file ISO OS pada icon Optical Drive CD/DVD.",
+        "Klik tombol 'Start' untuk menjalankan mesin virtual."
+      ],
+      "tips": "Install 'VirtualBox Guest Additions' setelah OS terpasang di VM agar layar bisa fullscreen dan mendukung fitur Copy-Paste file.",
+      "faq": [
+        {
+          "q": "Mengapa muncul pesan error VT-x disabled?",
+          "a": "Anda harus mengaktifkan opsi Virtualization Technology di dalam menu BIOS motherboard."
+        },
+        {
+          "q": "Apa perbedaan utama VirtualBox dan VMware?",
+          "a": "VirtualBox bersifat open-source dan gratis sepenuhnya, sedangkan VMware Workstation menawarkan performa lebih optimal namun berbayar untuk versi Pro-nya."
+        }
+      ]
+    },
+    {
+      "id": "dual-boot-guide",
+      "title": "Panduan Dual Boot (Windows 11 + Linux Ubuntu)",
+      "category": "Dual Boot",
+      "icon": "fa-solid fa-sliders",
+      "tools": [
+        "PC Windows 11 aktif",
+        "USB Bootable Linux Ubuntu",
+        "Windows Disk Management"
+      ],
+      "requirements": "Sangat Penting! Backup seluruh berkas penting sebelum memotong partisi disk.",
+      "steps": [
+        "Buka Disk Management di Windows (`diskmgmt.msc`).",
+        "Klik kanan pada Drive C / Volume terbesar &rarr; Klik 'Shrink Volume'.",
+        "Potong ruang kosong minimal 50.000 MB (50GB) sebagai Unallocated Space.",
+        "Buka Control Panel Windows &rarr; Power Options &rarr; Matikan fitur 'Fast Startup'.",
+        "Colok USB Linux dan jalankan installer Linux.",
+        "Pada langkah pilihan instalasi, pilih 'Install Linux alongside Windows Boot Manager'.",
+        "Selesaikan instalasi. Saat PC dinyalakan, menu GRUB Bootloader akan memberikan pilihan booting ke Windows atau Linux."
+      ],
+      "tips": "Jangan pernah menghapus partisi Linux secara sembarangan dari Windows agar GRUB Bootloader tidak mengalami error.",
+      "faq": [
+        {
+          "q": "Apakah data di Windows akan hilang saat Dual Boot?",
+          "a": "Tidak hilang, selama Anda menginstall Linux pada ruang Unallocated Space terpisah."
+        },
+        {
+          "q": "OS mana yang sebaiknya diinstall lebih dulu saat Dual Boot?",
+          "a": "Sebaiknya install Windows terlebih dahulu, karena bootloader Windows cenderung menimpa bootloader Linux apabila urutan instalasinya dibalik."
+        }
+      ]
+    },
+    {
+      "id": "bootable-tools",
+      "title": "Membuat Flashdisk Bootable (Rufus & Ventoy)",
+      "category": "Tools",
+      "icon": "fa-solid fa-usb",
+      "tools": [
+        "USB Flashdisk 8GB+",
+        "Software Rufus / Ventoy",
+        "File ISO OS"
+      ],
+      "requirements": "Proses format akan menghapus seluruh isi flashdisk, lakukan backup terlebih dahulu.",
+      "steps": [
+        "Verifikasi checksum SHA-256 file ISO menggunakan CertUtil (Windows) atau perintah sha256sum (Linux) sebelum membuat USB Bootable, guna memastikan file tidak korup atau berubah saat proses unduh.",
+        "**Metode Rufus**: Buka Rufus &rarr; Pilih USB Flashdisk &rarr; Klik 'SELECT' dan pilih ISO &rarr; Tentukan Skema Partisi (GPT untuk UEFI, MBR untuk Legacy) &rarr; Klik START.",
+        "**Metode Ventoy**: Buka Ventoy GUI &rarr; Pilih USB Flashdisk &rarr; Klik 'Install' &rarr; Setelah selesai, cukup COPY-PASTE banyak file ISO (Windows, Linux, Rescue CD) langsung ke dalam drive Flashdisk!",
+        "Tancapkan USB ke PC target untuk menguji proses boot."
+      ],
+      "tips": "Ventoy jauh lebih praktis karena 1 Flashdisk bisa menampung 10+ file ISO OS berbeda tanpa perlu format ulang.",
+      "faq": [
+        {
+          "q": "Mana yang lebih direkomendasikan, Rufus atau Ventoy?",
+          "a": "Gunakan Ventoy jika Anda teknisi yang sering install berbagai OS, gunakan Rufus untuk instalasi single OS paling stabil."
+        },
+        {
+          "q": "Bagaimana cara memastikan file ISO yang diunduh tidak korup?",
+          "a": "Bandingkan nilai checksum SHA-256 file ISO Anda dengan checksum resmi yang tertera di situs penyedia OS sebelum membuat USB Bootable."
+        }
+      ]
+    }
+  ]
+}

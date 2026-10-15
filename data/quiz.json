@@ -1,0 +1,301 @@
+{
+  "tjkt": [
+    {
+      "id": 1,
+      "question": "Perangkat jaringan yang berfungsi menghubungkan dua jaringan yang memiliki segmen IP atau subnet berbeda adalah...",
+      "options": ["Hub", "Switch Layer 2", "Router", "Access Point"],
+      "answer": 2,
+      "explanation": "Router bekerja pada Layer 3 OSI (Network Layer) dan bertugas merutekan paket data antar dua atau lebih segmen jaringan IP yang berbeda."
+    },
+    {
+      "id": 2,
+      "question": "Lapisan pada OSI Layer yang bertanggung jawab untuk konversi data, enkripsi, dan kompresi format berkas adalah...",
+      "options": ["Application Layer", "Presentation Layer", "Session Layer", "Transport Layer"],
+      "answer": 1,
+      "explanation": "Presentation Layer (Layer 6) menangani sintaksis, format data, enkripsi (SSL/TLS), dan kompresi data agar dapat dimengerti oleh aplikasi tujuan."
+    },
+    {
+      "id": 3,
+      "question": "Berapa jumlahusable host IP Address yang tersedia pada subnet mask /24 (255.255.255.0)?",
+      "options": ["256 Host", "255 Host", "254 Host", "252 Host"],
+      "answer": 2,
+      "explanation": "Subnet /24 memiliki 256 total IP (2^8), dikurangi 2 untuk Network Address (IP pertama) dan Broadcast Address (IP terakhir), sehingga sisa 254 host usable."
+    },
+    {
+      "id": 4,
+      "question": "Topologi jaringan di mana setiap node terhubung ke satu perangkat pusat seperti Switch/Hub disebut topologi...",
+      "options": ["Bus", "Ring", "Star", "Mesh"],
+      "answer": 2,
+      "explanation": "Topologi Star menghubungkan seluruh komputer secara terpencar ke satu titik konsentrasi pusat (Switch/Hub)."
+    },
+    {
+      "id": 5,
+      "question": "Protokol yang berfungsi secara otomatis memberikan alamat IP, Gateway, dan DNS ke perangkat klien di jaringan adalah...",
+      "options": ["DNS", "DHCP", "FTP", "HTTP"],
+      "answer": 1,
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) mengalokasikan pengalamatan IP otomatis kepada host yang terhubung."
+    },
+    {
+      "id": 6,
+      "question": "Jenis media transmisi fisik kabel yang menggunakan pancaran gelombang cahaya di dalam serat kaca untuk mentransmisikan data adalah...",
+      "options": ["Coaxial Cable", "UTP Cat5e", "Fiber Optic", "STP Cat6"],
+      "answer": 2,
+      "explanation": "Fiber Optik memanfaatkan refraksi cahaya di dalam core kaca murni untuk mentransmisikan data berkecepatan sangat tinggi tanpa interferensi frekuensi radio."
+    },
+    {
+      "id": 7,
+      "question": "Protokol Transport Layer yang bersifat Connection-Oriented dan menjamin pengiriman paket data tanpa error adalah...",
+      "options": ["UDP", "TCP", "ICMP", "IP"],
+      "answer": 1,
+      "explanation": "TCP (Transmission Control Protocol) melakukan Three-Way Handshake (SYN, SYN-ACK, ACK) untuk memastikan data sampai secara utuh dan berurutan."
+    },
+    {
+      "id": 8,
+      "question": "Berapa panjang bit pengalamatan IP pada IPv6?",
+      "options": ["32 Bit", "64 Bit", "128 Bit", "256 Bit"],
+      "answer": 2,
+      "explanation": "IPv6 menggunakan format alokasi 128-bit yang dituliskan dalam 8 kelompok bilangan heksadesimal dipisahkan tanda titik dua."
+    },
+    {
+      "id": 9,
+      "question": "Layanan jaringan yang meneruskan nama domain ramah manusia (seperti teachit.id) menjadi alamat IP numerik server adalah...",
+      "options": ["DNS", "NAT", "Proxy", "VLAN"],
+      "answer": 0,
+      "explanation": "DNS (Domain Name System) berfungsi sebagai buku telepon internet yang menerjemahkan nama domain ke IP Address."
+    },
+    {
+      "id": 10,
+      "question": "Teknologi yang memungkinkan satu switch fisik dibagi menjadi beberapa kelompok jaringan lokal terisolasi secara logis adalah...",
+      "options": ["VPN", "VLAN", "WLAN", "WAN"],
+      "answer": 1,
+      "explanation": "VLAN (Virtual Local Area Network) mengisolasi broadcast domain pada layer 2 switch untuk meningkatkan efisiensi dan keamanan."
+    },
+    {
+      "id": 11,
+      "question": "Manakah di bawah ini yang termasuk dalam alokasi rentang IP Private Kelas C?",
+      "options": ["10.0.0.0 s/d 10.255.255.255", "172.16.0.0 s/d 172.31.255.255", "192.168.0.0 s/d 192.168.255.255", "127.0.0.1 s/d 127.0.0.254"],
+      "answer": 2,
+      "explanation": "Rentang 192.168.0.0/16 diatur RFC 1918 khusus sebagai alamat IP Private Kelas C untuk jaringan lokal."
+    },
+    {
+      "id": 12,
+      "question": "Urutan standar susunan warna kabel UTP tipe Straight T568B dari pin 1 sampai 8 adalah...",
+      "options": [
+        "Putih-Hijau, Hijau, Putih-Oranye, Biru, Putih-Biru, Oranye, Putih-Cokelat, Cokelat",
+        "Putih-Oranye, Oranye, Putih-Hijau, Biru, Putih-Biru, Hijau, Putih-Cokelat, Cokelat",
+        "Putih-Oranye, Oranye, Putih-Hijau, Hijau, Putih-Biru, Biru, Putih-Cokelat, Cokelat",
+        "Putih-Cokelat, Cokelat, Putih-Hijau, Biru, Putih-Biru, Hijau, Putih-Oranye, Oranye"
+      ],
+      "answer": 1,
+      "explanation": "Standar T568B urutannya: Putih-Oranye, Oranye, Putih-Hijau, Biru, Putih-Biru, Hijau, Putih-Cokelat, Cokelat."
+    },
+    {
+      "id": 13,
+      "question": "Sistem keamanan yang menyaring dan memantau lalulintas data masuk dan keluar berdasarkan aturan Access Control List (ACL) disebut...",
+      "options": ["Firewall", "Router", "Repeater", "Modem"],
+      "answer": 0,
+      "explanation": "Firewall berfungsi sebagai benteng pertahanan yang menginspeksi paket data dan memblokir ancaman berbahaya."
+    },
+    {
+      "id": 14,
+      "question": "Perintah CLI ping di jaringan memanfaatkan protokol pada Layer 3 bernama...",
+      "options": ["ARP", "ICMP", "IGMP", "SNMP"],
+      "answer": 1,
+      "explanation": "Utilitas ping mengirimkan pesan ICMP (Internet Control Message Protocol) Echo Request dan menunggu Echo Reply untuk menguji konektivitas."
+    },
+    {
+      "id": 15,
+      "question": "Layer OSI yang menggunakan Port Number (seperti Port 80 untuk HTTP dan Port 443 untuk HTTPS) adalah...",
+      "options": ["Network Layer", "Transport Layer", "Data Link Layer", "Session Layer"],
+      "answer": 1,
+      "explanation": "Transport Layer (TCP/UDP) menetapkan nomor port sumber dan tujuan untuk mengarahkan trafik data ke aplikasi yang sesuai."
+    },
+    {
+      "id": 16,
+      "question": "Hypervisor yang diinstal langsung di atas perangkat keras (Bare-Metal) tanpa sistem operasi perantara contohnya adalah...",
+      "options": ["Oracle VirtualBox", "VMware ESXi / Proxmox VE", "VMware Workstation", "Microsoft Hyper-V on Win 10"],
+      "answer": 1,
+      "explanation": "Type 1 Bare-Metal Hypervisor berjalan langsung di atas hardware tanpa butuh OS host perantara."
+    },
+    {
+      "id": 17,
+      "question": "Model layanan Cloud Computing di mana pengguna menyewa mesin virtual, penyimpanan storage, dan sumber daya jaringan secara dinamis adalah...",
+      "options": ["SaaS (Software as a Service)", "PaaS (Platform as a Service)", "IaaS (Infrastructure as a Service)", "FaaS (Function as a Service)"],
+      "answer": 2,
+      "explanation": "IaaS menyediakan sumber daya infrastruktur fisik/virtual seperti AWS EC2, Google Compute Engine, atau DigitalOcean Droplet."
+    },
+    {
+      "id": 18,
+      "question": "Metode subnetting fleksibel yang memungkinkan pembagian panjang prefiks subnet tidak sama berdasarkan jumlah kebutuhan host dipanggil...",
+      "options": ["FLSM (Fixed Length Subnet Mask)", "VLSM (Variable Length Subnet Mask)", "NAT", "BGP Routing"],
+      "answer": 1,
+      "explanation": "VLSM mengizinkan alokasi alokasi subnet mask berbeda pada tiap segmen jaringan agar menghemat IP."
+    },
+    {
+      "id": 19,
+      "question": "MAC Address (Media Access Control Address) terdiri dari berapa karakter heksadesimal?",
+      "options": ["8 Karakter", "12 Karakter (48 Bit)", "16 Karakter", "32 Karakter"],
+      "answer": 1,
+      "explanation": "MAC Address terdiri dari 48-bit (12 karakter heksadesimal), dipisahkan tanda titik dua atau strip, contoh `00:1A:2B:3C:4D:5E`."
+    },
+    {
+      "id": 20,
+      "question": "Protokol routing dinamis berjenis Link-State yang paling populer digunakan pada jaringan skala internal enterprise adalah...",
+      "options": ["RIPv2", "OSPF (Open Shortest Path First)", "BGP", "Static Route"],
+      "answer": 1,
+      "explanation": "OSPF adalah protokol routing dinamis standar terbuka berbasis algoritma Dijkstra Shortest Path First yang sangat cepat konvergensinya."
+    }
+  ],
+  "rpl": [
+    {
+      "id": 1,
+      "question": "Simbol berbentuk belah ketupat (Diamond) dalam diagram alir (Flowchart) digunakan untuk melambangkan...",
+      "options": ["Proses perhitungan", "Input / Output data", "Keputusan / Kondisi (Decision)", "Start / End Terminal"],
+      "answer": 2,
+      "explanation": "Simbol belah ketupat menggambarkan titik percabangan keputusan logika (Ya/Tidak atau True/False)."
+    },
+    {
+      "id": 2,
+      "question": "Tag HTML5 semantik yang tepat digunakan untuk membungkus area navigasi daftar menu utama website adalah...",
+      "options": ["<header>", "<nav>", "<aside>", "<section>"],
+      "answer": 1,
+      "explanation": "Tag `<nav>` dikhususkan untuk bagian navigasi link utama pada dokumen web semantik."
+    },
+    {
+      "id": 3,
+      "question": "Manakah properti CSS3 yang digunakan untuk membuat layout antarmuka tembus pandang bergaya Glassmorphism?",
+      "options": ["opacity: 0.5", "backdrop-filter: blur()", "box-shadow: none", "filter: grayscale()"],
+      "answer": 1,
+      "explanation": "Properti `backdrop-filter: blur(...)` memburamkan elemen di latar belakang kartu untuk efek kaca (Glassmorphism)."
+    },
+    {
+      "id": 4,
+      "question": "Manakah cara mendeklarasikan variabel ber-cakupan block (block-scoped) yang nilainya dapat diubah di JavaScript ES6?",
+      "options": ["var nama = 'Tech';", "let nama = 'Tech';", "const nama = 'Tech';", "global nama = 'Tech';"],
+      "answer": 1,
+      "explanation": "Kata kunci `let` mendeklarasikan variabel ber-scope block yang nilainya bisa diubah kembali (mutable)."
+    },
+    {
+      "id": 5,
+      "question": "Metode HTTP yang digunakan dalam arsitektur RESTful API khusus untuk memperbarui data yang sudah ada di database adalah...",
+      "options": ["GET", "POST", "PUT / PATCH", "DELETE"],
+      "answer": 2,
+      "explanation": "PUT/PATCH digunakan untuk pembaruan data secara penuh (PUT) atau sebagian (PATCH)."
+    },
+    {
+      "id": 6,
+      "question": "Pilar OOP yang berfungsi untuk menyembunyikan detail atribut internal class dan hanya membukanya melalui method setter/getter dipanggil...",
+      "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+      "answer": 0,
+      "explanation": "Encapsulation (Pembungkusan) menyembunyikan variabel internal class agar tidak bisa dimodifikasi secara sebarangan dari luar."
+    },
+    {
+      "id": 7,
+      "question": "Perintah Git yang digunakan untuk menggabungkan kode dari branch fitur ke branch utama (main) adalah...",
+      "options": ["git push", "git fetch", "git merge", "git checkout"],
+      "answer": 2,
+      "explanation": "`git merge <nama-branch>` memadukan histori komit dari branch fitur ke branch aktif saat ini."
+    },
+    {
+      "id": 8,
+      "question": "Perintah SQL yang digunakan untuk mengambil data dari tabel berdasarkan kondisi tertentu adalah...",
+      "options": ["INSERT INTO", "UPDATE", "SELECT ... WHERE", "ALTER TABLE"],
+      "answer": 2,
+      "explanation": "Klausa `SELECT ... WHERE` digunakan untuk menyaring dan mengambil baris data terstruktur dari database SQL."
+    },
+    {
+      "id": 9,
+      "question": "Pustaka JavaScript buatan Meta yang memanfaatkan komponen UI dan konsep Virtual DOM adalah...",
+      "options": ["Laravel", "Express.js", "React.js", "Django"],
+      "answer": 2,
+      "explanation": "React.js adalah library JavaScript terpopuler berbasis React Component dan Virtual DOM."
+    },
+    {
+      "id": 10,
+      "question": "Format pertukaran data berbasis pasangan Key-Value teks ringan yang kompatibel di hampir semua bahasa pemrograman adalah...",
+      "options": ["XML", "JSON", "CSV", "YAML"],
+      "answer": 1,
+      "explanation": "JSON (JavaScript Object Notation) adalah standar defacto pertukaran data web API modern."
+    },
+    {
+      "id": 11,
+      "question": "Framework PHP modern bergaya MVC yang menyediakan fitur ORM bernama Eloquent dan CLI Artisan adalah...",
+      "options": ["CodeIgniter", "Laravel", "Symfony", "Yii"],
+      "answer": 1,
+      "explanation": "Laravel adalah framework PHP paling populer dengan arsitektur MVC dan fitur Artisan CLI serta Eloquent ORM."
+    },
+    {
+      "id": 12,
+      "question": "Di dalam arsitektur MVC, komponen yang bertanggung jawab memproses logika bisnis dan berhubungan langsung dengan database adalah...",
+      "options": ["Model", "View", "Controller", "Route"],
+      "answer": 0,
+      "explanation": "Model menangani struktur data, query database, dan validasi aturan bisnis aplikasi."
+    },
+    {
+      "id": 13,
+      "question": "Metodologi pengembangan perangkat lunak yang bersifat iteratif, fleksibel terhadap perubahan, dan membagi proyek menjadi Sprint pendek dinamakan...",
+      "options": ["Waterfall Model", "Agile / Scrum", "V-Model", "Spiral Model"],
+      "answer": 1,
+      "explanation": "Agile Scrum membagi pengerjaan aplikasi ke dalam siklus iteratif pendek (1-4 minggu) bernama Sprint."
+    },
+    {
+      "id": 14,
+      "question": "Diagram UML yang menggambarkan interaksi antara pengguna (Aktor) dan fungsionalitas yang disediakan oleh sistem dipanggil...",
+      "options": ["Class Diagram", "Sequence Diagram", "Use Case Diagram", "Activity Diagram"],
+      "answer": 2,
+      "explanation": "Use Case Diagram memperlihatkan batas sistem dan peran Aktor yang berinteraksi dengan sistem."
+    },
+    {
+      "id": 15,
+      "question": "Pengujian software yang dilakukan untuk menguji setiap fungsi kecil (fungsi/method) secara terisolasi dinamakan...",
+      "options": ["Integration Testing", "Unit Testing", "System Testing", "Acceptance Testing"],
+      "answer": 1,
+      "explanation": "Unit Testing fokus memverifikasi kebenaran logika modul atau fungsi paling dasar dalam kode."
+    },
+    {
+      "id": 16,
+      "question": "Ekstensi file standar untuk skrip server-side PHP adalah...",
+      "options": [".html", ".js", ".php", ".py"],
+      "answer": 2,
+      "explanation": "File skrip PHP disimpan dengan ekstensi `.php` dan dieksekusi oleh mesin interpreter PHP server."
+    },
+    {
+      "id": 17,
+      "question": "Sistem runtime lingkungan eksekusi luar browser yang memungkinkan JavaScript berjalan di sisi backend server adalah...",
+      "options": ["Node.js", "Apache", "Nginx", "Tomcat"],
+      "answer": 0,
+      "explanation": "Node.js memungkinkan eksekusi kode JavaScript di sisi server menggunakan engine Chrome V8."
+    },
+    {
+      "id": 18,
+      "question": "Metode JavaScript Array ES6 yang digunakan untuk mentransformasikan setiap elemen array menjadi array baru berukuran sama adalah...",
+      "options": [".forEach()", ".map()", ".filter()", ".reduce()"],
+      "answer": 1,
+      "explanation": "Fungsi `.map()` meretur array baru hasil pemrosesan callback terhadap setiap elemen."
+    },
+    {
+      "id": 19,
+      "question": "Istilah CI/CD dalam DevOps dan otomatisasi deployment software merupakan singkatan dari...",
+      "options": [
+        "Code Integration / Code Deployment",
+        "Continuous Integration / Continuous Deployment",
+        "Central Infrastructure / Central Distribution",
+        "Control Interface / Control Data"
+      ],
+      "answer": 1,
+      "explanation": "CI/CD singkatan dari Continuous Integration / Continuous Deployment untuk integrasi & pengujian otomatis sebelum rilis."
+    },
+    {
+      "id": 20,
+      "question": "Manakah pernyataan yang benar mengenai keunggulan pemakaian Git Version Control?",
+      "options": [
+        "Menghapus seluruh file lama secara otomatis",
+        "Memungkinkan pelacakan riwayat perubahan kode dan kolaborasi tim secara aman",
+        "Menggantikan fungsi web server",
+        "Hanya dapat digunakan untuk bahasa HTML saja"
+      ],
+      "answer": 1,
+      "explanation": "Git mencatat setiap commit perubahan kode, memfasilitasi pencabangan (branching), dan memicu kolaborasi tanpa saling menimpa kode rekan tim."
+    }
+  ]
+}
