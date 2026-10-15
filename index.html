@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeachIT Indonesia - Platform Edukasi Teknologi Futuristic</title>
+  <meta name="description" content="Platform edukasi terdepan Indonesia untuk belajar TJKT (Jaringan), RPL (Pemrograman), dan Tutorial Instalasi Sistem Operasi.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- AOS Scroll Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <span>Teach<span class="text-gradient">IT</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">Tentang</a></li>
+        <li><a href="tjkt.html" class="nav-link">Materi TJKT</a></li>
+        <li><a href="rpl.html" class="nav-link">Modul RPL</a></li>
+        <li><a href="os.html" class="nav-link">Tutorial OS</a></li>
+        <li><a href="quiz.html" class="nav-link">Interactive Quiz</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" title="Cari Materi (Ctrl+K)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="theme-toggle" title="Ubah Tema">
+          <i class="fa-solid fa-moon text-cyan"></i>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Canvas Animation -->
+  <section class="hero-section">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container">
+      <div class="hero-grid">
+        <div data-aos="fade-right">
+          <span class="badge-tech">
+            <i class="fa-solid fa-atom"></i> Platform Edukasi Teknologi Generasi Baru
+          </span>
+          <h1 class="hero-title">
+            Kuasai Masa Depan <br>
+            <span class="typing-text text-gradient"></span>
+          </h1>
+          <p class="hero-desc">
+            Kurikulum interaktif terlengkap untuk menguasai Teknik Jaringan Komputer & Telekomunikasi (TJKT), Rekayasa Perangkat Lunak (RPL), dan Panduan Instalasi Sistem Operasi Modern.
+          </p>
+          <div class="hero-btns">
+            <a href="tjkt.html" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-rocket"></i> Mulai Belajar Sekarang
+            </a>
+            <a href="quiz.html" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-gamepad"></i> Uji Ujian Quiz
+            </a>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" class="text-center">
+          <div class="glass-card" style="padding: 2.5rem; border-color: var(--border-glow);">
+            <i class="fa-solid fa-network-wired fa-5x text-cyan mb-4"></i>
+            <h3 class="mb-2">Akses 100% Gratis</h3>
+            <p class="text-muted mb-4">Belajar kapan saja tanpa registrasi rumit. Dilengkapi statistik progress lokal & kuis interaktif.</p>
+            <div class="d-flex justify-content-center gap-2">
+              <span class="badge-tech"><i class="fa-solid fa-check me-1"></i>40+ Topik</span>
+              <span class="badge-tech"><i class="fa-solid fa-check me-1"></i>Quiz Otomatis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-time Stats Bar -->
+      <div class="stats-bar" data-aos="fade-up">
+        <div class="stat-item">
+          <div class="stat-number">16</div>
+          <div class="stat-label">Materi TJKT</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">17</div>
+          <div class="stat-label">Modul RPL</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Panduan OS</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40</div>
+          <div class="stat-label">Soal Interactive Quiz</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Section -->
+  <section style="padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="badge-tech">Fitur Unggulan</span>
+        <h2 class="section-title">Mengapa Memilih TeachIT Indonesia?</h2>
+        <p class="section-subtitle">Didesain khusus dengan standar industri teknologi modern dan visual UI intuitif.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Kurikulum TJKT Lengkap</h3>
+          <p class="text-muted mt-2">Mulai dari OSI Layer, IP Address, Subnetting, Routing, Switching, hingga Cloud & Virtualisasi Server.</p>
+        </div>
+
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon" style="color: var(--accent-purple); background: rgba(168, 85, 247, 0.1);"><i class="fa-solid fa-code"></i></div>
+          <h3>Full Stack RPL</h3>
+          <p class="text-muted mt-2">Pelajari Algoritma, HTML5, CSS3, JS ES6, PHP, SQL, Framework React & Laravel, SDLC hingga Testing.</p>
+        </div>
+
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon" style="color: var(--accent-green); background: rgba(16, 185, 129, 0.1);"><i class="fa-brands fa-windows"></i></div>
+          <h3>Tutorial OS & Tools</h3>
+          <p class="text-muted mt-2">Panduan praktis install Windows 10/11, Ubuntu, Debian, Kali Linux, VirtualBox, Dual Boot & Rufus.</p>
+        </div>
+
+        <div class="glass-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);"><i class="fa-solid fa-trophy"></i></div>
+          <h3>Progress & Quiz Engine</h3>
+          <p class="text-muted mt-2">Simpan pencapaian belajarmu di Local Storage browser dan dapatkan badge digital otomatis!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Search Modal -->
+  <div id="search-modal" class="modal-backdrop">
+    <div class="modal-search-box">
+      <div class="modal-search-header">
+        <i class="fa-solid fa-magnifying-glass text-cyan"></i>
+        <input type="text" id="modal-search-input" placeholder="Cari materi TJKT, RPL, OS, atau Quiz... (Tekan ESC untuk tutup)">
+        <button id="close-search-modal" style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.2rem;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-results-list" id="modal-search-results">
+        <div class="text-center p-4 text-dim">
+          <i class="fa-solid fa-magnifying-glass fa-2x mb-2 text-cyan"></i>
+          <p>Ketik kata kunci untuk mulai mencari...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <div class="brand-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span>Teach<span class="text-gradient">IT</span></span>
+          </a>
+          <p>Platform pembelajaran teknologi terdepan di Indonesia untuk mencetak generasi IT siap kerja berstandar global.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="dashboard.html">Dashboard Belajar</a></li>
+            <li><a href="contact.html">Kontak Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Modul Pembelajaran</h4>
+          <ul>
+            <li><a href="tjkt.html">Materi TJKT</a></li>
+            <li><a href="rpl.html">Modul RPL</a></li>
+            <li><a href="os.html">Tutorial OS</a></li>
+            <li><a href="quiz.html">Ujian Quiz</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Sosial Media</h4>
+          <div class="d-flex gap-3 mt-2">
+            <a href="#" class="btn-outline btn-sm" style="width: 40px; height: 40px; padding: 0;"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="btn-outline btn-sm" style="width: 40px; height: 40px; padding: 0;"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="btn-outline btn-sm" style="width: 40px; height: 40px; padding: 0;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="btn-outline btn-sm" style="width: 40px; height: 40px; padding: 0;"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; by Fauzan Ardiansyah | 2026 TeachIT Indonesia. All rights reserved. Built for Indonesian Tech Talents.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Scroll Animation JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+  <!-- Modular Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz - TeachIT Indonesia</title>
+  <meta name="description" content="Uji kemampuan TJKT & RPL Anda dengan 40 soal interaktif lengkap dengan timer, nilai otomatis, dan pembahasan.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-microchip"></i></div>
+        <span>Teach<span class="text-gradient">IT</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">Tentang</a></li>
+        <li><a href="tjkt.html" class="nav-link">Materi TJKT</a></li>
+        <li><a href="rpl.html" class="nav-link">Modul RPL</a></li>
+        <li><a href="os.html" class="nav-link">Tutorial OS</a></li>
+        <li><a href="quiz.html" class="nav-link active">Interactive Quiz</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" title="Cari Soal"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="theme-toggle" title="Ubah Tema"><i class="fa-solid fa-moon text-cyan"></i></button>
+        <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section style="padding: 3rem 0 1.5rem; background: var(--gradient-glow);">
+    <div class="container text-center">
+      <span class="badge-tech"><i class="fa-solid fa-gamepad me-1"></i>Evaluasi Kemampuan Cyber</span>
+      <h1 class="section-title text-gradient">Ujian Quiz Interaktif</h1>
+      <p class="section-subtitle">20 Soal TJKT & 20 Soal RPL dengan skoring real-time & analisis pembahasan.</p>
+    </div>
+  </section>
+
+  <!-- Quiz Mounting Area -->
+  <section style="padding: 2rem 0 4rem;">
+    <div class="container" id="quiz-app">
+      <div class="text-center p-5">
+        <i class="fa-solid fa-spinner fa-spin fa-3x text-cyan mb-3"></i>
+        <p>Menyiapkan sistem ujian interaktif...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Search Modal -->
+  <div id="search-modal" class="modal-backdrop">
+    <div class="modal-search-box">
+      <div class="modal-search-header">
+        <i class="fa-solid fa-magnifying-glass text-cyan"></i>
+        <input type="text" id="modal-search-input" placeholder="Cari materi TJKT, RPL, OS, atau Quiz...">
+        <button id="close-search-modal" style="background: none; border: none; color: var(--text-muted); cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-results-list" id="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="text-dim">&copy; by Fauzan Ardiansyah | 2026 TeachIT Indonesia. Platform Edukasi Teknologi Indonesia.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800 });</script>
+  <script src="js/data.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

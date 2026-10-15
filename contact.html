@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami - TeachIT Indonesia</title>
+  <meta name="description" content="Hubungi tim TeachIT Indonesia untuk dukungan, pertanyaan materi, atau kolaborasi edukasi teknologi.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-microchip"></i></div>
+        <span>Teach<span class="text-gradient">IT</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">Tentang</a></li>
+        <li><a href="tjkt.html" class="nav-link">Materi TJKT</a></li>
+        <li><a href="rpl.html" class="nav-link">Modul RPL</a></li>
+        <li><a href="os.html" class="nav-link">Tutorial OS</a></li>
+        <li><a href="quiz.html" class="nav-link">Interactive Quiz</a></li>
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="contact.html" class="nav-link active">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-trigger" title="Cari Materi"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="theme-toggle" title="Ubah Tema"><i class="fa-solid fa-moon text-cyan"></i></button>
+        <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section style="padding: 3rem 0 1.5rem; background: var(--gradient-glow);">
+    <div class="container text-center">
+      <span class="badge-tech"><i class="fa-solid fa-envelope me-1"></i>Hubungi Tim Kami</span>
+      <h1 class="section-title text-gradient">Kontak & Support TeachIT</h1>
+      <p class="section-subtitle">Kirimkan pertanyaan, saran pengembangan materi, atau permintaan kerjasama edukasi.</p>
+    </div>
+  </section>
+
+  <!-- Form & Map Section -->
+  <section style="padding: 3rem 0 5rem;">
+    <div class="container">
+      <div class="learning-layout">
+        <!-- Contact Form Card -->
+        <div class="glass-card" data-aos="fade-right">
+          <h3 class="mb-4 text-cyan"><i class="fa-solid fa-paper-plane me-2"></i>Kirim Pesan</h3>
+          
+          <form id="contact-form">
+            <div class="search-input-box mb-3" style="position: relative;">
+              <label for="contact-name" style="display: block; margin-bottom: 0.4rem; color: var(--text-muted); font-size: 0.9rem;">Nama Lengkap:</label>
+              <input type="text" id="contact-name" placeholder="Masukkan nama lengkap Anda" required style="padding-left: 1rem;">
+            </div>
+
+            <div class="search-input-box mb-3" style="position: relative;">
+              <label for="contact-email" style="display: block; margin-bottom: 0.4rem; color: var(--text-muted); font-size: 0.9rem;">Email Aktif:</label>
+              <input type="email" id="contact-email" placeholder="contoh: nama@domain.com" required style="padding-left: 1rem;">
+            </div>
+
+            <div class="search-input-box mb-4" style="position: relative;">
+              <label for="contact-message" style="display: block; margin-bottom: 0.4rem; color: var(--text-muted); font-size: 0.9rem;">Pesan / Pertanyaan:</label>
+              <textarea id="contact-message" rows="5" placeholder="Tuliskan pesan Anda secara jelas di sini..." required style="width: 100%; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem; color: var(--text-main); font-family: var(--font-sans); outline: none;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane me-2"></i>Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Maps Embed & Info -->
+        <div class="glass-card" data-aos="fade-left">
+          <h3 class="mb-4 text-cyan"><i class="fa-solid fa-location-dot me-2"></i>Lokasi Headquarter</h3>
+          <p class="text-muted mb-3">TeachIT Indonesia Tech Center - Klaten, Indonesia</p>
+          
+          <div class="video-container mb-4" style="padding-bottom: 60%; min-height: 250px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.2126847750374!2d110.59153034194122!3d-7.715145354343655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a458aa3a941ef%3A0xb76217ea1eb652b8!2sIqbal%20Optik!5e0!3m2!1sid!2sid!4v1785254744932!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+
+          <div class="d-flex flex-column gap-2 text-muted" style="font-size: 0.95rem;">
+            <div><i class="fa-solid fa-envelope text-cyan me-2"></i>Email: support fauzanardiansyah616@gmail.com</div>
+            <div><i class="fa-solid fa-globe text-purple me-2"></i>Website: www.teachit.id</div>
+            <div><i class="fa-solid fa-clock text-warning me-2"></i>Jam Operasional: Senin - Jumat (08:00 - 15:00 WIB)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Search Modal -->
+  <div id="search-modal" class="modal-backdrop">
+    <div class="modal-search-box">
+      <div class="modal-search-header">
+        <i class="fa-solid fa-magnifying-glass text-cyan"></i>
+        <input type="text" id="modal-search-input" placeholder="Cari materi TJKT, RPL, OS, atau Quiz...">
+        <button id="close-search-modal" style="background: none; border: none; color: var(--text-muted); cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-results-list" id="modal-search-results"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="text-dim">&copy; by Fauzan Ardiansyah | 2026 TeachIT Indonesia. Platform Edukasi Teknologi Indonesia.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('contact-name').value;
+          if (window.showToast) {
+            window.showToast(`Terima kasih ${name}, pesan Anda berhasil terkirim! Tim kami akan membalas via email.`, 'success');
+          }
+          form.reset();
+        });
+      }
+    });
+  </script>
+  <script src="js/data.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
