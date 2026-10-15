@@ -1,0 +1,50 @@
+/* ==========================================================================
+   TEACHIT INDONESIA - LIGHT THEME OVERRIDES (dark.css)
+   ========================================================================== */
+
+/* Light Theme Variables */
+body.light-theme {
+  --bg-main: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(241, 245, 249, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.8);
+  
+  --primary-blue: #0284c7;
+  --primary-cyan: #0284c7;
+  --accent-purple: #7c3aed;
+  
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+  
+  --border-color: rgba(15, 23, 42, 0.12);
+  --border-glow: rgba(2, 132, 199, 0.4);
+
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  --shadow-neon: 0 0 20px rgba(2, 132, 199, 0.2);
+}
+
+body.light-theme .navbar {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .navbar.scrolled {
+  background: #ffffff;
+}
+
+body.light-theme .code-block {
+  background: #0f172a;
+  color: #38bdf8;
+}
+
+body.light-theme .tech-diagram-box {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+body.light-theme .footer {
+  background: #e2e8f0;
+  border-top-color: #cbd5e1;
+}
